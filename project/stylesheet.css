@@ -4,8 +4,7 @@
 /* remember to change the size of images */
 /* remember to change the size of images */
 
-@import 'css/aboutme.css';
-@import 'css/plannerdesign.css';
+
 
 * {
   box-sizing: border-box;
@@ -23,26 +22,9 @@ html {
 
 img { max-width: 100%; min-width: 30%; }
 
-h1 { 
-  font-size: 1.5rem;  /* 64px */
-  text-shadow: 2px 2px 3px rgba(255, 255, 229, 0.993);
-}
 
-h2 { font-size: 1.2rem;
-  text-shadow: 2px 2px 3px rgba(255, 255, 229, 0.993);}
 
-h3 { font-size: 1.0rem;
-  text-shadow: 2px 2px 3px rgba(255, 255, 229, 0.993);}
 
-h1, h2, h3, h4, h5, h6 {
-  color: rgb(48, 47, 47, 0.85);
-  font-family: 'montserrat', Arial, Helvetica, sans-serif; 
-  font-weight: bold;
-}
-
-body {
-  background-color: rgba(255, 255, 229, 0.4);
-}
 
 p {
   color:rgb(48, 47, 47, 0.80);
@@ -54,156 +36,10 @@ p {
   border-color: black;
   box-shadow: 5px 5px 5px lightgray;
   margin: 1rem;
-  text-align: center;
-}
-
-/* header start */
-.header_image {
-  box-sizing: 0;
-}
-
-.header {
-  background-color: rgb(255, 245, 190);
-  bottom: 0.2rem;
-  font-family: 'montserrat', Arial, Helvetica, sans-serif;
-  font-style: normal; 
-  font-weight: 100%;
-  min-width: 2rem; 
-  padding: 0;
-  position: relative;
-  text-align: center;
-}
-
-/* ????????????? */
-.header_h1 /*home*/{
-  font-family: 'montserrat', Arial, Helvetica, sans-serif; 
-  font-weight: 100;
-  padding-top: 1rem;
-  text-align: center;
-}
-
-.header_name {
-  text-align: center;
-  padding-top: 1rem;
- }
-
-
-
-.link a {
-  font-family: 'montserrat', Arial, Helvetica, sans-serif; 
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 600;
-  display: block;
-  padding: 1.5rem;
-  text-decoration: none; 
-  text-transform: uppercase;
-}
-
-.link {
-  width: 100%;
-}
-
-#home {
-  background-color: rgb(255, 255, 200);
-}
-
-#aboutme {
-  background-color: rgb(255, 255, 180);
-}
-
-#plannerdesign {
-  background-color: rgb(253, 255, 150);
-}
-
-/* #home {
-  background-color: rgb(255, 245, 190);
-}
-
-#aboutme{
-  background-color: rgb(180, 179, 179);
-}
-
-#plannerdesign {
-  background-color: rgb(221, 221, 221);
-} */
-
-.inlink:last-child {
-  padding: 0;
-  margin: 0;
-}
-
-/* ul {
-  list-style-type: none;
-  margin: 0 ;
-  padding: 1rem 0 0 0;
-}
-
-li {
-  display: inline;
-  text-align: center;
-}
-
-li a {
-  color: gray;
-  padding: 0.6rem;
-  text-decoration: none;
-} */
-/* header finish */
-
-/* main start */
-
-.index {
-  border-radius: 15px;
-  box-shadow: 3px 3px 3px rgb(209, 209, 209);
-  margin: 0.5rem;
-  max-width: 30%;
-}
-
-#topmargin {
-  margin-top: 1.5rem;
-}
-
-#bottommargin {
-  margin-bottom: 1.2rem;;
-}
-.indexcard {
-  margin: 0.5rem;
-  padding: 0.5rem;
-}
-
-#top {
-  margin-top: 1.5rem;
-}
-
-#notop {
-  margin-bottom: 2rem;
-  margin-top: 0rem;
-  padding: 0rem;
-}
-
-/* footer start */
-
-footer {
-  background-color: rgb(255, 245, 190);
-  font-family: 'montserrat', Arial, Helvetica, sans-serif;
-  font-weight: 600;
-  max-zoom: 100%;
-  min-zoom: 20%;
-  padding: 2.4rem;
-  text-align: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2fr);
 }
 
 
 
-a:link {
-  color: rgb(80, 80, 80);
-}
-
-a:visited {
-  color: rgb(131, 131, 131);
-}
-
-a:hover {
-  color: rgb(46, 46, 46);
-}
