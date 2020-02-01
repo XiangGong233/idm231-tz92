@@ -39,6 +39,7 @@ p {
   justify-content: center;
   display: grid;
   grid-template-columns: repeat(2fr);
+  grid-row-start: 2;
 }
 
 
