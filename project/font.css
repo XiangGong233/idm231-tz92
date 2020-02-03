@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "courgetteregular";
+    src: url("material/font/courgetteregular.woff") format("woff"), /* Modern Browsers */
+      url("material/font/courgetteregular.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "kalamregular";
+  
+    src: url("material/font/kalamregular.woff") format("woff"), /* Modern Browsers */
+      url("material/font/kalamregular.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "kalamlight";
+  
+    src: url("material/font/kalamlight.woff") format("woff"), /* Modern Browsers */
+      url("material/font/kalamlight.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "kalambold";
+  
+    src: url("material/font/kalambold.woff") format("woff"), /* Modern Browsers */
+      url("material/font/kalambold.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: "BaroneysTextured";
+  
+    src: url("material/font/baroneystextured.woff") format("woff"), /* Modern Browsers */
+      url("material/font/baroneystextured.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+
+/* font-family: 'Courgette', cursive;
+font-family: 'Kalam', cursive; */
