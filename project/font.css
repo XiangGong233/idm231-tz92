@@ -42,7 +42,96 @@
     font-style: normal;
   }
 
+  @font-face {
+    font-family: "CarnivaleeFreakshow";
+  
+    src: url("material/font/carnevaleefreakshow.woff") format("woff"), /* Modern Browsers */
+      url("material/font/carnevaleefreakshow.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
 
+  @font-face {
+    font-family: "OctinVintageBRg-Regular";
+  
+    src: url("material/font/octinvintagebrg.woff") format("woff"), /* Modern Browsers */
+      url("material/font/octinvintagebrg.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
 
-/* font-family: 'Courgette', cursive;
-font-family: 'Kalam', cursive; */
+  @font-face {
+    font-family: "1938STeMPEL";
+  
+    src: url("material/font/1938stempel.woff") format("woff"), /* Modern Browsers */
+      url("material/font/1938stempel.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "AutumnLeaves";
+  
+    src: url("material/font/autumnleaves.woff") format("woff"), /* Modern Browsers */
+      url("material/font/autumnleaves.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "AntiqueBookCover";
+  
+    src: url("material/font/antiquebookcover.woff") format("woff"), /* Modern Browsers */
+      url("material/font/antiquebookcover.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "UnderWorld";
+  
+    src: url("material/font/underworld.woff") format("woff"), /* Modern Browsers */
+      url("material/font/underworld.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "BeryliumRegular";
+  
+    src: url("material/font/beryliumrg.woff") format("woff"), /* Modern Browsers */
+      url("material/font/beryliumrg.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "AlbertsthalTypewriter";
+  
+    src: url("material/font/albertsthaltypewriter.woff") format("woff"), /* Modern Browsers */
+      url("material/font/albertsthaltypewriter.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+/* snowman */
+
+  @font-face {
+    font-family: "ArchisticoNormal";
+  
+    src: url("material/font/archisticosimple.woff") format("woff"), /* Modern Browsers */
+      url("material/font/archisticosimple.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Areson";
+  
+    src: url("material/font/areson.woff") format("woff"), /* Modern Browsers */
+      url("material/font/areson.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* snowman end */
