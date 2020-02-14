@@ -61,6 +61,7 @@ dkms.conf
 
 *.jpeg
 111.jpeg
+*.png
 
 # video
 *.mp4
