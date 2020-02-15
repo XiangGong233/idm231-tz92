@@ -7,7 +7,27 @@ console.log("start yeah yeah")
 // const day = document.querySelectorAll('.day option');
 // const month = document.querySelectorAll('.month option');
 
-console.log(day)
+
+
+const modalOpen = document.getElementById('modal-open');
+const modalClose = document.getElementById('modal-close');
+const modal = document.getElementById('modal');
+
+const openModal = () => {
+modal.classList.remove('hidden');
+  // modal.hidden = false;
+};
+const closeModal = () => {
+modal.classList.add('hidden');
+  // modal.hidden = true;
+};
+
+modalOpen.addEventListener('click', openModal, false);
+modalClose.addEventListener('click', closeModal, false);
+
+if (typeof modalOpen !== 'null') {console.log ('wori');
+  // Now we know that foo is defined, we are good to go.
+}
 
 function classicalMusic(name, music, description, image, sound, date) {
     this.name = name;
