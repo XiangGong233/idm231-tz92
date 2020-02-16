@@ -15,12 +15,14 @@ const modalOpen = document.getElementById('modal-open');
 const modalClose = document.getElementById('modal-close');
 const modal = document.getElementById('modal');
 
+
 function openModal() {
 modal.classList.remove('hidden');
   // modal.hidden = false;
 };
 function closeModal() {
 modal.classList.add('hidden');
+modalOpen.classList.remove('hidden');
   // modal.hidden = true;
 };
 
