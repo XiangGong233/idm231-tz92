@@ -14,17 +14,22 @@ console.log("start yeah yeah")
 const modalOpen = document.getElementById('modal-open');
 const modalClose = document.getElementById('modal-close');
 const modal = document.getElementById('modal');
+const main = document.getElementById('main')
 
+function closeModal() {
+  modal.classList.add('hidden');
+  modalOpen.classList.remove('hidden');
+  main.classList.remove('hidden');
+
+    // modal.hidden = true;
+  };
 
 function openModal() {
 modal.classList.remove('hidden');
+modalOpen.classList.add('hidden');
   // modal.hidden = false;
 };
-function closeModal() {
-modal.classList.add('hidden');
-modalOpen.classList.remove('hidden');
-  // modal.hidden = true;
-};
+
 
 modalOpen.addEventListener('click', openModal, false);
 modalClose.addEventListener('click', closeModal, false);
@@ -157,11 +162,9 @@ const debussy = new classicalMusic(
 //   musician button
 // -----------------------------
 
-const createSign = function createFunction() {
 
-  const button = document.createElement("button");
-  button.id = `${classicalMusic.name}`;
-  button.classList.add("musician-name");
+function createInfor() {
+  // const  = document.createElement('div')
 
   const image = document.createElement("img");
   image.src = classicalMusic.image;
@@ -169,6 +172,12 @@ const createSign = function createFunction() {
 
   const paragraph = document.createElement("p");
   paragraph.innerHTML = classicalMusic.name;
+  
+  const button = document.createElement("button");
+  button.id = `${classicalMusic.name}`;
+  button.classList.add("musician-name");
+
+  
 
   button.appendChild(image);
   button.appendChild(paragraph);
@@ -176,14 +185,29 @@ const createSign = function createFunction() {
   return button;
 };
 
+// const createSign = 
 
 
 
 
 
+// -----------------
+// calculation
+// ----------------
+
+const birthdayMonth = document.getElementsByClassName("month");
+const whichMonth = [birthdayMonth.value];
+
+const birthdayDay = document.getElementsByClassName('day');
+const whichDayOfMonth = [birthdayDay.value];
+
+// function birth() {
+//   console.log('birthdayValue')
+// }
 
 
 
+function calculate() {
 
   if ((whichMonth == 12 && whichDayOfMonth >= 22) || (whichMonth == 1 && whichDayOfMonth <= 19)) {
     AstroSign = "mozart01";
@@ -210,6 +234,12 @@ const createSign = function createFunction() {
   } else if ((whichMonth == 1 && whichDayOfMonth >= 20) || (whichMonth == 2 && whichDayOfMonth <= 18)) {
     AstroSign = "debussy";
   }
+
+}
+
+const listen = document.getElementsByClassName('listen');
+
+listen.addEventListener('click', calculate, false)
 
 
 

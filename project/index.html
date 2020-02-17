@@ -7,7 +7,6 @@
     <title>Zodiac</title>
     <link rel="stylesheet" href="zodiacstylesheet.css">
     <link rel="stylesheet" href="font.css">
-    <script src="zodiacjavascript.js"></script>
     
     
 </head>
@@ -27,7 +26,7 @@
         <h2 id="birthday">
           Birthday?
         </h2>
-        <div class="birthdayform">
+          <div class="birthdayform">
           <select class="month">
             <option selected disabled>--Choose an option--</option>
             <option value="1" >1</option>
@@ -77,8 +76,8 @@
             <option value="30"  id="30">30</option>
             <option value="31"  id="31">31</option>
           </select> 
-        </div>
-     </div> <!-- title -->
+          </div> <!-- birthdayform -->
+      </div> <!-- title -->
 
      <button class="listen button">Listen!</button>
     </div> <!-- enter -->
@@ -95,7 +94,7 @@
   
   
   
-  <main id="main" >
+  <main id="main" class="hidden">
     <div class="musician-banner">
         <ul class="musician">
           <li id="m1">
@@ -226,5 +225,7 @@
 
 
 </div> <!-- all -->
+<script src="zodiacjavascript.js"></script>
+
 </body>
 </html>
