@@ -34,6 +34,13 @@ modalOpen.classList.add('hidden');
 modalOpen.addEventListener('click', openModal, false);
 modalClose.addEventListener('click', closeModal, false);
 
+// --------------------
+//  modal part finish
+// ---------------------
+
+
+
+
 
 function classicalMusic(name, music, description, image, sound, date) {
     this.name = name;
@@ -141,22 +148,7 @@ const debussy = new classicalMusic(
   'material/music/debussy.mp3'
   );
 
-  const musicianList = [
-    mozart01,
-    mozart02,
-    beethoven,
-    liszt01,
-    liszt02,
-    mendelssohn,
-    chopin,
-    bach,
-    schumann,
-    schubert,
-    satie,
-    debussy
-  ];
 
-  const musician = document.querySelectorAll('musician');
 
 // -------------------------
 //   musician button
@@ -164,7 +156,7 @@ const debussy = new classicalMusic(
 
 
 function createInfor() {
-  // const  = document.createElement('div')
+  // const aaaaa = document.createElement('div')
 
   const image = document.createElement("img");
   image.src = classicalMusic.image;
@@ -182,7 +174,7 @@ function createInfor() {
   button.appendChild(image);
   button.appendChild(paragraph);
 
-  return button;
+  return createInfor;
 };
 
 // const createSign = 
@@ -201,9 +193,12 @@ const whichMonth = [birthdayMonth.value];
 const birthdayDay = document.getElementsByClassName('day');
 const whichDayOfMonth = [birthdayDay.value];
 
-// function birth() {
-//   console.log('birthdayValue')
-// }
+
+function test() {
+  
+
+}
+
 
 
 
@@ -235,11 +230,59 @@ function calculate() {
     AstroSign = "debussy";
   }
 
+
 }
 
 const listen = document.getElementsByClassName('listen');
 
 listen.addEventListener('click', calculate, false)
+
+
+
+// --------------------------------------------
+//   ul hidden and musician card show up
+// --------------------------------------------
+
+const musicianList = [
+  mozart01,
+  mozart02,
+  beethoven,
+  liszt01,
+  liszt02,
+  mendelssohn,
+  chopin,
+  bach,
+  schumann,
+  schubert,
+  satie,
+  debussy
+];
+
+const musician = document.querySelectorAll('musician');
+const musicianContent = document.querySelectorAll('musician-content');
+
+
+function closeMusician() {
+  musician.classList.add('hidden');
+
+  };
+
+
+
+
+modalOpen.addEventListener('click', openModal, false);
+modalClose.addEventListener('click', closeModal, false);
+
+
+
+
+
+
+
+
+
+
+
 
 
 

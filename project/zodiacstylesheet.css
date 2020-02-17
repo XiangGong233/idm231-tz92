@@ -434,8 +434,14 @@ div.backface {
 
 
 
+/* ---------------------------
+musician card
+----------------------- */
 
-
+.musician-content {
+  width: 100%;
+  height: 100%;
+}
 
 
 
