@@ -1,12 +1,5 @@
 console.log("start yeah yeah")
 
-// function playSound() {
-//   // Play a sound based on the `selected_sign`
-// }
-
-// const day = document.querySelectorAll('.day option');
-// const month = document.querySelectorAll('.month option');
-
 // ------------------
 //     modal part
 // -------------------
@@ -20,14 +13,11 @@ function closeModal() {
   modal.classList.add('hidden');
   modalOpen.classList.remove('hidden');
   main.classList.remove('hidden');
-
-    // modal.hidden = true;
   };
 
 function openModal() {
 modal.classList.remove('hidden');
 modalOpen.classList.add('hidden');
-  // modal.hidden = false;
 };
 
 
@@ -42,15 +32,18 @@ modalClose.addEventListener('click', closeModal, false);
 
 
 
-function classicalMusic(name, music, description, image, sound, date) {
+function classicalMusic(name, music, description, image, sound) {
     this.name = name;
     this.music = music;
     this.description = description;
     this.image = image;
-    this.sound = new Audio(sound);
-    this.date = date;
+    this.sound = `${name}.mp3`;
+  
+
 
   }
+
+
   
 const mozart01 = new classicalMusic(
   'Wolfgang Amadeus Mozart', 
@@ -150,12 +143,18 @@ const debussy = new classicalMusic(
 
 
 
+
+
+
+
+
+
 // -------------------------
 //   musician button
 // -----------------------------
 
 
-function createInfor() {
+function creaeInfor() {
   // const aaaaa = document.createElement('div')
 
   const image = document.createElement("img");
@@ -177,8 +176,6 @@ function createInfor() {
   return createInfor;
 };
 
-// const createSign = 
-
 
 
 
@@ -187,19 +184,19 @@ function createInfor() {
 // calculation
 // ----------------
 
+
+
 const birthdayMonth = document.getElementsByClassName("month");
-const whichMonth = [birthdayMonth.value];
+const whichMonth = birthdayMonth.value;
 
 const birthdayDay = document.getElementsByClassName('day');
-const whichDayOfMonth = [birthdayDay.value];
+const whichDayOfMonth = birthdayDay.value;
+
 
 
 function test() {
-  
-
+  console.log( birthdayMonth.value);
 }
-
-
 
 
 function calculate() {
@@ -233,11 +230,11 @@ function calculate() {
 
 }
 
-const listen = document.getElementsByClassName('listen');
+// const listen = document.getElementsById('listen');
 
-listen.addEventListener('click', calculate, false)
+// listen.addEventListener('click', test, false)
 
-
+document.getElementById('listen').onclick = test;
 
 // --------------------------------------------
 //   ul hidden and musician card show up
@@ -261,22 +258,16 @@ const musicianList = [
 const musician = document.querySelectorAll('musician');
 const musicianContent = document.querySelectorAll('musician-content');
 
+const background = document.getElementsByClassName('all');
 
-function closeMusician() {
+
+function createCard() {
   musician.classList.add('hidden');
 
-  };
 
 
 
-
-modalOpen.addEventListener('click', openModal, false);
-modalClose.addEventListener('click', closeModal, false);
-
-
-
-
-
+}
 
 
 
