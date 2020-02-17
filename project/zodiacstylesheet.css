@@ -148,12 +148,17 @@ select {
 .month, .day {
   position: relative;
   display: flex;
-  width: 15em;
-  height: 3em;
+  width: 13rem;
+  height: 3.5rem;
+  margin: 1rem;
   line-height: 3;
   background: rgba(170, 101, 36, 0.6);
   overflow: hidden;
   border-radius: .25em;
+  font-family: 'courgetteregular', 'Helvetica Neue', 'Segoe UI', 'Calibri', 'Arial', sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  color: antiquewhite;
 }
 
 /* 
