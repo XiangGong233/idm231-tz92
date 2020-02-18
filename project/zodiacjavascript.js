@@ -43,9 +43,7 @@ function classicalMusic(name, music, description, image, sound) {
     this.music = music;
     this.description = description;
     this.image = image;
-    this.sound = `${name}.mp3`;
-  
-
+    this.sound = `material/music/${name}.mp3`;
 
   }
 
@@ -149,19 +147,17 @@ const debussy = new classicalMusic(
 
 
 
-
-
-
-
-
-
 // -------------------------
 //   musician button
 // -----------------------------
 
 
-function creaeInfor() {
-  // const aaaaa = document.createElement('div')
+
+const creatInfor = function creaeInfor() {
+  const div = document.createElement('div.musician-content');
+  div.appendChild(document.createTextNode('aaaaaaaaaaaaa'));
+  document.getElementById('musician-banner').appendChild(div);
+  // div.classList.add('musician-content');
 
   const image = document.createElement("img");
   image.src = classicalMusic.image;
@@ -181,66 +177,6 @@ function creaeInfor() {
 
   return createInfor;
 };
-
-
-
-
-
-// -----------------
-// calculation
-// ----------------
-
-
-
-const birthdayMonth = document.getElementsByClassName("month");
-const whichMonth = birthdayMonth.value;
-
-const birthdayDay = document.getElementsByClassName('day');
-const whichDayOfMonth = birthdayDay.value;
-
-
-
-function test() {
-  console.log( birthdayMonth.value);
-}
-
-
-function calculate() {
-
-  if ((whichMonth == 12 && whichDayOfMonth >= 22) || (whichMonth == 1 && whichDayOfMonth <= 19)) {
-    AstroSign = "mozart01";
-  } else if ((whichMonth == 11 && whichDayOfMonth >= 22) || (whichMonth == 12 && whichDayOfMonth <= 21)) {
-    AstroSign = "mozart02";
-  } else if ((whichMonth == 10 && whichDayOfMonth >= 24) || (whichMonth == 11 && whichDayOfMonth <= 21)) {
-    AstroSign = "beethoven";
-  } else if ((whichMonth == 9 && whichDayOfMonth >= 23) || (whichMonth == 10 && whichDayOfMonth <= 23)) {
-    AstroSign = "liszt01";
-  } else if ((whichMonth == 8 && whichDayOfMonth >= 23) || (whichMonth == 9 && whichDayOfMonth <= 22)) {
-    AstroSign = "liszt02";
-  } else if ((whichMonth == 7 && whichDayOfMonth >= 23) || (whichMonth == 8 && whichDayOfMonth <= 22)) {
-    AstroSign = "mendelssohn";
-  } else if ((whichMonth == 6 && whichDayOfMonth >= 22) || (whichMonth == 7 && whichDayOfMonth <= 22)) {
-    AstroSign = "chopin";
-  } else if ((whichMonth == 5 && whichDayOfMonth >= 21) || (whichMonth == 6 && whichDayOfMonth <= 21)) {
-    AstroSign = "bach";
-  } else if ((whichMonth == 4 && whichDayOfMonth >= 20) || (whichMonth == 5 && whichDayOfMonth <= 20)) {
-    AstroSign = "schumann";
-  } else if ((whichMonth == 3 && whichDayOfMonth >= 21) || (whichMonth == 4 && whichDayOfMonth <= 19)) {
-    AstroSign = "schubert";
-  } else if ((whichMonth == 2 && whichDayOfMonth >= 19) || (whichMonth == 3 && whichDayOfMonth <= 20)) {
-    AstroSign = "satie";
-  } else if ((whichMonth == 1 && whichDayOfMonth >= 20) || (whichMonth == 2 && whichDayOfMonth <= 18)) {
-    AstroSign = "debussy";
-  }
-
-
-}
-
-// const listen = document.getElementsById('listen');
-
-// listen.addEventListener('click', test, false)
-
-document.getElementById('listen').onclick = test;
 
 // --------------------------------------------
 //   ul hidden and musician card show up
@@ -274,6 +210,82 @@ function createCard() {
 
 
 }
+
+// const listen = document.getElementsById('listen');
+
+// listen.addEventListener('click', test, false)
+
+document.getElementById('listen').onclick = test;
+
+const test = function test() {
+  console.log( 'aaaa111111efsiufhsdl');
+  const divEl = document.createElement('div');
+  divEl.class = 'musician-content';
+
+  var paragraph = document.createElement("P");
+var text = document.createTextNode('awodema');
+paragraph.appendChild(text);
+divElement.appendChild(paragraph);
+
+document.getElementsByClassName("musician-banner").appendChild(divEl);
+
+
+
+}
+
+
+
+// -----------------
+// calculation
+// ----------------
+
+
+
+const birthdayMonth = document.getElementsByClassName("month");
+const whichMonth = birthdayMonth.value;
+
+const birthdayDay = document.getElementsByClassName('day');
+const whichDayOfMonth = birthdayDay.value;
+
+
+
+
+
+
+function calculate() {
+
+  if ((whichMonth == 12 && whichDayOfMonth >= 22) || (whichMonth == 1 && whichDayOfMonth <= 19)) {
+    AstroSign = "mozart01";
+  } else if ((whichMonth == 11 && whichDayOfMonth >= 22) || (whichMonth == 12 && whichDayOfMonth <= 21)) {
+    AstroSign = "mozart02";
+  } else if ((whichMonth == 10 && whichDayOfMonth >= 24) || (whichMonth == 11 && whichDayOfMonth <= 21)) {
+    AstroSign = "beethoven";
+  } else if ((whichMonth == 9 && whichDayOfMonth >= 23) || (whichMonth == 10 && whichDayOfMonth <= 23)) {
+    AstroSign = "liszt01";
+  } else if ((whichMonth == 8 && whichDayOfMonth >= 23) || (whichMonth == 9 && whichDayOfMonth <= 22)) {
+    AstroSign = "liszt02";
+  } else if ((whichMonth == 7 && whichDayOfMonth >= 23) || (whichMonth == 8 && whichDayOfMonth <= 22)) {
+    AstroSign = "mendelssohn";
+  } else if ((whichMonth == 6 && whichDayOfMonth >= 22) || (whichMonth == 7 && whichDayOfMonth <= 22)) {
+    AstroSign = "chopin";
+  } else if ((whichMonth == 5 && whichDayOfMonth >= 21) || (whichMonth == 6 && whichDayOfMonth <= 21)) {
+    AstroSign = "bach";
+  } else if ((whichMonth == 4 && whichDayOfMonth >= 20) || (whichMonth == 5 && whichDayOfMonth <= 20)) {
+    AstroSign = "schumann";
+  } else if ((whichMonth == 3 && whichDayOfMonth >= 21) || (whichMonth == 4 && whichDayOfMonth <= 19)) {
+    AstroSign = "schubert";
+  } else if ((whichMonth == 2 && whichDayOfMonth >= 19) || (whichMonth == 3 && whichDayOfMonth <= 20)) {
+    AstroSign = "satie";
+  } else if ((whichMonth == 1 && whichDayOfMonth >= 20) || (whichMonth == 2 && whichDayOfMonth <= 18)) {
+    AstroSign = "debussy";
+  }
+
+
+}
+
+
+
+
 
 
 
