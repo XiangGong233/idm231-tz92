@@ -206,10 +206,8 @@ const background = document.getElementsByClassName('all');
 function createCard() {
   musician.classList.add('hidden');
 
-
-
-
 }
+
 
 // const listen = document.getElementsById('listen');
 
@@ -219,8 +217,9 @@ document.getElementById('listen').onclick = test;
 
  function test() {
   console.log( 'aaaa111111efsiufhsdl');
-  console.log(birthdayDay.value);
-  return birthdayDay.value;
+  console.log(whichMonth);
+  // return birthdayDay.selectedindex;
+  return whichMonth;
 }
 
 
@@ -231,12 +230,14 @@ document.getElementById('listen').onclick = test;
 
 
 
-const birthdayMonth = document.getElementsByClassName("month");
-const whichMonth = birthdayMonth.value;
+var whichMonth = document.getElementById("month").value;
+// var whichMonth = birthdayMonth.value;
 
-const birthdayDay = document.getElementsByClassName('day');
-const whichDayOfMonth = birthdayDay.value;
+var whichDayOfMonth = document.getElementById('day').value;
+// var whichDayOfMonth = birthdayDay.value;
 
+
+console.log(whichMonth);
 
 function calculate() {
 
@@ -265,7 +266,6 @@ function calculate() {
   } else if ((whichMonth == 1 && whichDayOfMonth >= 20) || (whichMonth == 2 && whichDayOfMonth <= 18)) {
     AstroSign = "debussy";
   }
-
 
 }
 
