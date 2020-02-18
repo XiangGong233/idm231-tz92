@@ -13,11 +13,13 @@ const closeModal = function closeModal() {
   modal.classList.add('hidden');
   modalOpen.classList.remove('hidden');
   main.classList.remove('hidden');
+  console.log('Modal closed');
   };
 
 const openModal = function openModal() {
 modal.classList.remove('hidden');
 modalOpen.classList.add('hidden');
+console.log('Modal opened');
 };
 
 
