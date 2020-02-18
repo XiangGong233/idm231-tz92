@@ -9,13 +9,13 @@ const modalClose = document.getElementById('modal-close');
 const modal = document.getElementById('modal');
 const main = document.getElementById('main')
 
-function closeModal() {
+const closeModal = function closeModal() {
   modal.classList.add('hidden');
   modalOpen.classList.remove('hidden');
   main.classList.remove('hidden');
   };
 
-function openModal() {
+const openModal = function openModal() {
 modal.classList.remove('hidden');
 modalOpen.classList.add('hidden');
 };
@@ -255,8 +255,8 @@ const musicianList = [
   debussy
 ];
 
-const musician = document.querySelectorAll('musician');
-const musicianContent = document.querySelectorAll('musician-content');
+const musician = document.querySelectorAll('.musician');
+const musicianContent = document.querySelectorAll('.musician-content');
 
 const background = document.getElementsByClassName('all');
 
