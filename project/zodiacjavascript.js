@@ -17,9 +17,9 @@ const closeModal = function closeModal() {
   };
 
 const openModal = function openModal() {
-modal.classList.remove('hidden');
-modalOpen.classList.add('hidden');
-console.log('Modal opened');
+  modal.classList.remove('hidden');
+  modalOpen.classList.add('hidden');
+  console.log('Modal opened');
 };
 
 
@@ -31,6 +31,10 @@ modalClose.addEventListener('click', closeModal, false);
 // ---------------------
 
 
+
+// ---------------------
+// musician information list 
+// -----------------------
 
 
 
