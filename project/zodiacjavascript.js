@@ -217,20 +217,10 @@ function createCard() {
 
 document.getElementById('listen').onclick = test;
 
-const test = function test() {
+ function test() {
   console.log( 'aaaa111111efsiufhsdl');
-  const divEl = document.createElement('div');
-  divEl.class = 'musician-content';
-
-  var paragraph = document.createElement("P");
-var text = document.createTextNode('awodema');
-paragraph.appendChild(text);
-divElement.appendChild(paragraph);
-
-document.getElementsByClassName("musician-banner").appendChild(divEl);
-
-
-
+  console.log(birthdayDay.value);
+  return birthdayDay.value;
 }
 
 
@@ -246,10 +236,6 @@ const whichMonth = birthdayMonth.value;
 
 const birthdayDay = document.getElementsByClassName('day');
 const whichDayOfMonth = birthdayDay.value;
-
-
-
-
 
 
 function calculate() {
