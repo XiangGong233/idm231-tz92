@@ -30,6 +30,44 @@ modalClose.addEventListener('click', closeModal, false);
 //  modal part finish
 // ---------------------
 
+// -----------------
+// fadein out
+// ----------------
+
+function fadein() {
+  modal.classList.remove('fadeout');
+  modal.classList.add('fadein');
+  const main = getElementById('main');
+  main.classList.remove('fadeout');
+  main.classList.add('fadein');
+}
+
+function fadeout() {
+  modal.classList.remove('fadein');
+  modal.classList.add('fadeout');
+  const main = getElementById('main');
+  main.classList.remove('fadein');
+  main.classList.add('fadeout');
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // ---------------------
@@ -211,16 +249,16 @@ function createCard() {
 
 // const listen = document.getElementsById('listen');
 
-// listen.addEventListener('click', test, false)
+listen.addEventListener('click', test, false)
 
-document.getElementById('listen').onclick = test;
+// document.getElementById('listen').onclick = calculate;
 
  function test() {
   console.log( 'aaaa111111efsiufhsdl');
   var whichMonth = document.getElementById("month").value;
   console.log(whichMonth);
-  // return birthdayDay.selectedindex;
-  return whichMonth;
+  var whichDayOfMonth = document.getElementById('day').value;
+  console.log(whichDayOfMonth);
 }
 
 
@@ -241,6 +279,11 @@ var whichDayOfMonth = document.getElementById('day').value;
 console.log(whichMonth);
 
 function calculate() {
+  console.log( 'calcuate');
+  var whichMonth = document.getElementById("month").value;
+  console.log(whichMonth);
+  var whichDayOfMonth = document.getElementById('day').value;
+  console.log(whichDayOfMonth);
 
   if ((whichMonth == 12 && whichDayOfMonth >= 22) || (whichMonth == 1 && whichDayOfMonth <= 19)) {
     AstroSign = "mozart01";

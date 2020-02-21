@@ -57,13 +57,31 @@ p {
 
 /* headerbox design start*/
 
-@keyframes headerboxin {
+@keyframes fadein {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
   }
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fadein {
+  animation: fadein 1s ease-in-out forwards;
+}
+
+.fadeout {
+  animation: fadeout 1s ease-in-out forwards;
+
 }
 
 div.headerbox {
@@ -91,7 +109,6 @@ div.headerbox {
   align-items: center;
   z-index: 99;
   grid-area: 2/2/7/9;
-  animation: headerboxin 1s ease-in-out forwards;
   transition: all 1s ease-in-out 1s;
 }
 
