@@ -217,6 +217,7 @@ document.getElementById('listen').onclick = test;
 
  function test() {
   console.log( 'aaaa111111efsiufhsdl');
+  var whichMonth = document.getElementById("month").value;
   console.log(whichMonth);
   // return birthdayDay.selectedindex;
   return whichMonth;
