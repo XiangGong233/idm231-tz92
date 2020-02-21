@@ -14,12 +14,16 @@ const closeModal = function closeModal() {
   modalOpen.classList.remove('hidden');
   main.classList.remove('hidden');
   console.log('Modal closed');
+  fadeout();
+
   };
 
 const openModal = function openModal() {
   modal.classList.remove('hidden');
   modalOpen.classList.add('hidden');
   console.log('Modal opened');
+  fadein();
+
 };
 
 
@@ -34,37 +38,31 @@ modalClose.addEventListener('click', closeModal, false);
 // fadein out
 // ----------------
 
+// open fadein add fadein modal 
+// close fadeout add faeout modal 
+// open fadeout add main 
+// close fadein 
+
+
+
+
 function fadein() {
   modal.classList.remove('fadeout');
   modal.classList.add('fadein');
-  const main = getElementById('main');
-  main.classList.remove('fadeout');
-  main.classList.add('fadein');
+  main.classList.add('fadeout');
+  main.classList.remove('fadein');
 }
 
 function fadeout() {
   modal.classList.remove('fadein');
   modal.classList.add('fadeout');
-  const main = getElementById('main');
-  main.classList.remove('fadein');
-  main.classList.add('fadeout');
-
+  main.classList.add('fadein');
+  main.classList.remove('fadeout');
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// ---------------------
+// fadeinout
+// ----------------------
 
 
 
