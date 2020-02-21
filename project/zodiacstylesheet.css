@@ -477,7 +477,7 @@ musician card
   overflow: hidden;
   justify-items: center;
   align-items: center;
-  transition: all 1s ease-in-out 1s;
+  /* transition: all 1s ease-in-out 1s; */
 }
 
 .infor-container {
@@ -493,22 +493,48 @@ musician card
   align-items: center;
 }
 
-.thisimage {
-  background-color: rgb(95, 158, 160, 0.3);
-  background-size: 30%;
+/* ----------------
+image left 
+------------------ */
+
+
+
+.imageframe-box {
   grid-area: 2/2/6/4;
+  width: 80%;
+  height: 100%;
+  max-width: 400px;
+  max-height: 600px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.imageframe {
+  grid-area: 1/1/2/2;
+  /* background-color: rgba(255, 255, 240, 0.534); */
   width: 100%;
   height: 100%;
-  max-width: 70%;
-  max-height: 80%;
-  border-image: url(material/image/wooddesignpng1.png);
-  border-image-slice: 10%;
-  border-width: 60px;
-  border-style: solid;
-
-  /* margin: 4rem; */
-
+  z-index: 150;
+  background-image: url(material/image/frame/wooddesignpng1.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
+
+.thisimage {
+  justify-self: center;
+  align-self: center;
+  grid-area: 1/1/2/2;
+  z-index: 50;
+  width: 85%;
+}
+
+/* ------------------
+information
+---------------------- */
+
+
+
 
 
 
