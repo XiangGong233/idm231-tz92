@@ -79,7 +79,7 @@ function classicalMusic(name, music, description, image, sound) {
     this.music = music;
     this.description = description;
     this.image = image;
-    this.sound = `material/music/${name}.mp3`;
+    this.sound = sound;
 
   }
 
@@ -184,13 +184,29 @@ const debussy = new classicalMusic(
 
 
 // -------------------------
-//   musician button
+//   musician page
 // -----------------------------
 const musician = document.querySelectorAll('.musician');
 const background = document.getElementsByClassName('all');
+const inforbox = document.getElementsByClassName('infor-box');
+const inforcontainer = document.getElementsByClassName('infor-container');
 
 
- function musicianContent() {
+
+function musicianContent() {
+  console.log('musician content test');
+  inforbox.classList.remove('hidden');
+
+
+
+
+
+
+
+
+
+
+
   const div = document.createElement('div.musician-content');
   div.appendChild(document.createTextNode('aaaaaaaaaaaaa'));
   // div.classList.add('musician-content');
