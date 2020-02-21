@@ -186,13 +186,13 @@ const debussy = new classicalMusic(
 // -------------------------
 //   musician button
 // -----------------------------
+const musician = document.querySelectorAll('.musician');
+const background = document.getElementsByClassName('all');
 
 
-
-const creatInfor = function creaeInfor() {
+ function musicianContent() {
   const div = document.createElement('div.musician-content');
   div.appendChild(document.createTextNode('aaaaaaaaaaaaa'));
-  document.getElementById('musician-banner').appendChild(div);
   // div.classList.add('musician-content');
 
   const image = document.createElement("img");
@@ -200,7 +200,7 @@ const creatInfor = function creaeInfor() {
   image.alt = `${classicalMusic.name}`;
 
   const paragraph = document.createElement("p");
-  paragraph.innerHTML = classicalMusic.name;
+  paragraph.innerHTML = classicalMusic.description;
   
   const button = document.createElement("button");
   button.id = `${classicalMusic.name}`;
@@ -211,7 +211,6 @@ const creatInfor = function creaeInfor() {
   button.appendChild(image);
   button.appendChild(paragraph);
 
-  return createInfor;
 };
 
 // --------------------------------------------
@@ -233,16 +232,8 @@ const musicianList = [
   debussy
 ];
 
-const musician = document.querySelectorAll('.musician');
-const musicianContent = document.querySelectorAll('.musician-content');
-
-const background = document.getElementsByClassName('all');
 
 
-function createCard() {
-  musician.classList.add('hidden');
-
-}
 
 
 // const listen = document.getElementsById('listen');
