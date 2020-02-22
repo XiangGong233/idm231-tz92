@@ -10,19 +10,21 @@ const modal = document.getElementById('modal');
 const main = document.getElementById('main')
 
 const closeModal = function closeModal() {
-  modal.classList.add('hidden');
+  fadeout();
+
+  modal.classList.add('layback');
   modalOpen.classList.remove('hidden');
   main.classList.remove('hidden');
   console.log('Modal closed');
-  fadeout();
 
   };
 
 const openModal = function openModal() {
-  modal.classList.remove('hidden');
+  fadein();
+
+  modal.classList.remove('layback');
   modalOpen.classList.add('hidden');
   console.log('Modal opened');
-  fadein();
 
 };
 
@@ -64,15 +66,9 @@ function fadeout() {
 // fadeinout
 // ----------------------
 
-
-
-
-
 // ---------------------
 // musician information list 
 // -----------------------
-
-
 
 function classicalMusic(name, music, description, image, sound) {
     this.name = name;
@@ -80,10 +76,7 @@ function classicalMusic(name, music, description, image, sound) {
     this.description = description;
     this.image = image;
     this.sound = sound;
-
   }
-
-
   
 const mozart01 = new classicalMusic(
   'Wolfgang Amadeus Mozart', 
@@ -181,20 +174,35 @@ const debussy = new classicalMusic(
   'material/music/debussy.mp3'
   );
 
-
+  const musicianList = [
+    mozart01, mozart02, beethoven, liszt01, liszt02, mendelssohn,
+    chopin, bach, schumann, schubert, satie, debussy
+  ];
 
 // -------------------------
 //   musician page
 // -----------------------------
 const musician = document.querySelectorAll('.musician');
 const background = document.getElementsByClassName('all');
-const inforbox = document.getElementsByClassName('infor-box');
+
+const inforbox = document.getElementById('infor-box');
 const inforcontainer = document.getElementsByClassName('infor-container');
+const closeinfor = document.getElementsByClassName('closeinfor');
+
+function closeinformodal() {
+  console.log('close musician information modal');
+  inforbox.classList.add('hidden');
+  inforbox.classList.add('fadeout');
+}
+
+
 
 
 
 function musicianContent() {
   console.log('musician content test');
+  console.log('open musician information modal');
+
   inforbox.classList.remove('hidden');
 
 
@@ -233,20 +241,7 @@ function musicianContent() {
 //   ul hidden and musician card show up
 // --------------------------------------------
 
-const musicianList = [
-  mozart01,
-  mozart02,
-  beethoven,
-  liszt01,
-  liszt02,
-  mendelssohn,
-  chopin,
-  bach,
-  schumann,
-  schubert,
-  satie,
-  debussy
-];
+
 
 
 
@@ -264,6 +259,7 @@ listen.addEventListener('click', test, false)
   console.log(whichMonth);
   var whichDayOfMonth = document.getElementById('day').value;
   console.log(whichDayOfMonth);
+  console.log(musicianList.length);
 }
 
 
