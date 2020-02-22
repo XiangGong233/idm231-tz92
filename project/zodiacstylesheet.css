@@ -77,12 +77,22 @@ p {
 }
 
 .fadein {
-  animation: fadein 1s ease-in-out forwards;
+  animation: fadein 0.3s ease-in-out forwards;
 }
 
 .fadeout {
-  animation: fadeout 1s ease-in-out forwards;
+  animation: fadeout 0.3s ease-in-out forwards;
 
+}
+
+.hidden {
+  display: none !important;
+  transition-delay: 0.3s;
+}
+
+.layback {
+  z-index: -1!important;
+  transition: all 0.3s ease-in-out 0.3s;
 }
 
 div.headerbox {
@@ -148,7 +158,7 @@ select {
   margin: 0.2rem auto;
   text-align: center;
   font-family: 'courgetteregular', 'Helvetica Neue', 'Segoe UI', 'Calibri', 'Arial', sans-serif;
-  font-size: 18px;
+  font-size: 0.8rem;
   color: antiquewhite;
   background-color: rgba(170, 101, 36, 0.6);
   cursor: pointer;
@@ -158,12 +168,8 @@ select {
   outline: 0;
   flex: 1;
   padding: 0 .5em;
-
 }
 
-.option {
-  font-size: 0.5rem;
-}
 
 
 .month, .day {
@@ -198,15 +204,7 @@ button part
 
 }
 
-.hidden {
-  display: none !important;
-  transition-delay: 1s;
-}
 
-.layback {
-  z-index: -1!important;
-  opacity: 0;
-}
 
 
 button {

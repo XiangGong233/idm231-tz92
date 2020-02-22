@@ -21,6 +21,7 @@ const closeModal = function closeModal() {
 
 const openModal = function openModal() {
   fadein();
+  modal.classList.remove('hidden');
 
   modal.classList.remove('layback');
   modalOpen.classList.add('hidden');
@@ -53,6 +54,9 @@ function fadein() {
   modal.classList.add('fadein');
   main.classList.add('fadeout');
   main.classList.remove('fadein');
+  modalOpen.classList.add('fadeout');
+  modalOpen.classList.remove('fadein');
+
 }
 
 function fadeout() {
@@ -60,6 +64,9 @@ function fadeout() {
   modal.classList.add('fadeout');
   main.classList.add('fadein');
   main.classList.remove('fadeout');
+  modalOpen.classList.add('fadein');
+  modalOpen.classList.remove('fadeout');
+
 }
 
 // ---------------------
@@ -78,6 +85,7 @@ function classicalMusic(name, music, description, image, sound) {
     this.sound = sound;
   }
   
+
 const mozart01 = new classicalMusic(
   'Wolfgang Amadeus Mozart', 
   'Piano Sonata No. 16 in C major, K. 545 - Sonata facile - 1. Allegro', 
@@ -189,69 +197,78 @@ const inforbox = document.getElementById('infor-box');
 const inforcontainer = document.getElementsByClassName('infor-container');
 const closeinfor = document.getElementsByClassName('closeinfor');
 
-function closeinformodal() {
-  console.log('close musician information modal');
-  inforbox.classList.add('hidden');
-  inforbox.classList.add('fadeout');
-}
-
-
-
-
-
-function musicianContent() {
-  console.log('musician content test');
-  console.log('open musician information modal');
-
-  inforbox.classList.remove('hidden');
-
-
-
-
-
-
-
-
-
-
-
-  const div = document.createElement('div.musician-content');
-  div.appendChild(document.createTextNode('aaaaaaaaaaaaa'));
-  // div.classList.add('musician-content');
-
-  const image = document.createElement("img");
-  image.src = classicalMusic.image;
-  image.alt = `${classicalMusic.name}`;
-
-  const paragraph = document.createElement("p");
-  paragraph.innerHTML = classicalMusic.description;
-  
-  const button = document.createElement("button");
-  button.id = `${classicalMusic.name}`;
-  button.classList.add("musician-name");
-
-  
-
-  button.appendChild(image);
-  button.appendChild(paragraph);
-
-};
-
-// --------------------------------------------
-//   ul hidden and musician card show up
-// --------------------------------------------
-
-
-
-
-
-
+document.getElementById('listen').onclick = openinformodal;
 
 // const listen = document.getElementsById('listen');
 
-listen.addEventListener('click', test, false)
+function closeinformodal() {
+  console.log('close musician information modal');
+  inforbox.classList.add('fadeout');
+  inforbox.classList.add('layback');
+  inforbox.classList.remove('fadein');
 
-// document.getElementById('listen').onclick = calculate;
+  main.classList.remove('layback');
+  main.classList.remove('fadeout');
+  main.classList.remove('hidden');
+  main.classList.add('fadein');
+
+  modalOpen.classList.remove('hidden');
+  modalOpen.classList.remove('fadeout');
+  modalOpen.classList.add('fadein');
+  
+}
+
+// listen.addEventListener('click', test, false)
+
+
+function openinformodal() {
+  console.log('musician content test');
+  console.log('open musician information modal');
+  inforbox.classList.remove('hidden');
+  inforbox.classList.remove('layback');
+  inforbox.classList.remove('fadeout');
+  inforbox.classList.add('fadein');
+
+  main.classList.add('fadeout');
+  main.classList.add('hidden');
+  main.classList.add('layback');
+  main.classList.remove('fadein');
+
+  modalOpen.classList.add('hidden');
+  modalOpen.classList.add('fadeout');
+  modalOpen.classList.remove('fadein');
+
+  modal.classList.add('hidden');
+  // modal.classList.add('layback');
+  // modal.classList.add('fadeout');
+  modal.classList.remove('fadein');
+  
+
+
+
+  // function const div = document.createElement('div.musician-content');
+  // div.appendChild(document.createTextNode('aaaaaaaaaaaaa'));
+  // // div.classList.add('musician-content');
+
+  // const image = document.createElement("img");
+  // image.src = classicalMusic.image;
+  // image.alt = `${classicalMusic.name}`;
+
+  // const paragraph = document.createElement("p");
+  // paragraph.innerHTML = classicalMusic.description;
+  
+  // const button = document.createElement("button");
+  // button.id = `${classicalMusic.name}`;
+  // button.classList.add("musician-name");
+
+  // button.appendChild(image);
+  // button.appendChild(paragraph);
+
+};
+
+
+
+
 
  function test() {
   console.log( 'aaaa111111efsiufhsdl');
