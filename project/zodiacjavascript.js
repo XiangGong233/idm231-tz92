@@ -187,6 +187,17 @@ const debussy = new classicalMusic(
     chopin, bach, schumann, schubert, satie, debussy
   ];
 
+
+  // function addclassmusician() {
+    
+  //   for (let i = 0; i < musicianList.length; i++) {
+  //     console.log(i);
+  //     const liid = document.getElementById('m' + i);
+  //     liid.classList.add('[i]');
+      
+  //   }
+  // }
+
 // -------------------------
 //   musician page
 // -----------------------------

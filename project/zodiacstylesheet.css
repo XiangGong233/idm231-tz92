@@ -287,6 +287,10 @@ button {
 
     }
 
+    .mozartsmall:hover #mozartlovesu {
+      font-size: 2rem;
+    }
+
     .browse-banner h3 {
       grid-area: 4/1/5/3;
       text-align: center;
