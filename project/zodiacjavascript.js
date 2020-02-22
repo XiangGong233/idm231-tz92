@@ -200,6 +200,7 @@ const closeinfor = document.getElementsByClassName('closeinfor');
 document.getElementById('listen').onclick = openinformodal;
 
 // const listen = document.getElementsById('listen');
+// listen.addEventListener('click', test, false)
 
 function closeinformodal() {
   console.log('close musician information modal');
@@ -218,7 +219,6 @@ function closeinformodal() {
   
 }
 
-// listen.addEventListener('click', test, false)
 
 
 function openinformodal() {
@@ -243,28 +243,35 @@ function openinformodal() {
   // modal.classList.add('fadeout');
   modal.classList.remove('fadein');
   
+  information();
+
+};
 
 
 
-  // function const div = document.createElement('div.musician-content');
-  // div.appendChild(document.createTextNode('aaaaaaaaaaaaa'));
-  // // div.classList.add('musician-content');
+function information() {
+  classicalMusic();
 
-  // const image = document.createElement("img");
-  // image.src = classicalMusic.image;
-  // image.alt = `${classicalMusic.name}`;
+  const image = document.getElementById('thisimage');
+  image.src = classicalMusic.image;
+  image.alt = `${classicalMusic.name}`;
 
-  // const paragraph = document.createElement("p");
-  // paragraph.innerHTML = classicalMusic.description;
+  const name = document.getElementById('thisname');
+  name.innerHTML = `${classicalMusic.name}`;
+
+  const music = document.getElementById('thismusic');
+  music.innerHTML = `${classicalMusic.music}`;
+
+  const sound = document.getElementById('thissound');
+  sound.src = classicalMusic.sound;
   
-  // const button = document.createElement("button");
-  // button.id = `${classicalMusic.name}`;
-  // button.classList.add("musician-name");
+  const description = document.getElementById('thisdescription');
+  description.innerHTML = classicalMusic.description;
 
   // button.appendChild(image);
   // button.appendChild(paragraph);
+}
 
-};
 
 
 
