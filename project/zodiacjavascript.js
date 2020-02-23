@@ -83,6 +83,9 @@ function classicalMusic(name, music, description, image, sound) {
     this.description = description;
     this.image = image;
     this.sound = sound;
+    this.showInfor = function() {
+      console.log(this.name + ' is the author of ' + this.music + ' and here is the description of this classical music ---- ' + this.description);
+    }
   }
   
 
@@ -91,7 +94,7 @@ const mozart01 = new classicalMusic(
   'Piano Sonata No. 16 in C major, K. 545 - Sonata facile - 1. Allegro', 
   'Lorem ipsum dolor sit, amet consectetur adipisicing elit.', 
   'material/image/mozart.jpg.src = URL', 
-  'material/music/mozart.mp3'
+  'material/music/mozart.mp3',
   );
 
 const mozart02 = new classicalMusic(
@@ -187,20 +190,54 @@ const debussy = new classicalMusic(
     chopin, bach, schumann, schubert, satie, debussy
   ];
 
+  // let i = 0;
+    
+  // while (musicianList[i]) {
+  //   console.log(musicianList[i].name);
+  //   musicianList[i].showInfor();
+
+  //   i++;
+  // }
 
   // function addclassmusician() {
+  //   let i = 0;
     
-  //   for (let i = 0; i < musicianList.length; i++) {
-  //     console.log(i);
-  //     const liid = document.getElementById('m' + i);
-  //     liid.classList.add('[i]');
-      
+  //   while (musicianList[i]) {
+  //     console.log(musicianList[i]);
+  //     musicianList[i].showInfor();
+
+  //     i++;
   //   }
   // }
 
 // -------------------------
 //   musician page
 // -----------------------------
+
+function information() {
+  classicalMusic();
+
+  const image = document.getElementById('thisimage');
+  image.src = classicalMusic.image;
+  image.alt = `${classicalMusic.name}`;
+
+  const name = document.getElementById('thisname');
+  name.innerHTML = `${classicalMusic.name}`;
+
+  const music = document.getElementById('thismusic');
+  music.innerHTML = `${classicalMusic.music}`;
+
+  const sound = document.getElementById('thissound');
+  sound.src = classicalMusic.sound;
+  
+  const description = document.getElementById('thisdescription');
+  description.innerHTML = classicalMusic.description;
+
+  // image.appendChild(image);
+  // name.appendChild(name);
+}
+
+
 const musician = document.querySelectorAll('.musician');
 const background = document.getElementsByClassName('all');
 
@@ -233,6 +270,7 @@ function closeinformodal() {
 
 
 function openinformodal() {
+
   console.log('musician content test');
   console.log('open musician information modal');
   inforbox.classList.remove('hidden');
@@ -255,33 +293,11 @@ function openinformodal() {
   modal.classList.remove('fadein');
   
   information();
-
 };
 
 
 
-function information() {
-  classicalMusic();
 
-  const image = document.getElementById('thisimage');
-  image.src = classicalMusic.image;
-  image.alt = `${classicalMusic.name}`;
-
-  const name = document.getElementById('thisname');
-  name.innerHTML = `${classicalMusic.name}`;
-
-  const music = document.getElementById('thismusic');
-  music.innerHTML = `${classicalMusic.music}`;
-
-  const sound = document.getElementById('thissound');
-  sound.src = classicalMusic.sound;
-  
-  const description = document.getElementById('thisdescription');
-  description.innerHTML = classicalMusic.description;
-
-  // button.appendChild(image);
-  // button.appendChild(paragraph);
-}
 
 
 
@@ -289,7 +305,7 @@ function information() {
 
 
  function test() {
-  console.log( 'aaaa111111efsiufhsdl');
+  console.log( 'test test test test test ');
   var whichMonth = document.getElementById("month").value;
   console.log(whichMonth);
   var whichDayOfMonth = document.getElementById('day').value;
@@ -306,15 +322,14 @@ function information() {
 
 
 var whichMonth = document.getElementById("month").value;
-// var whichMonth = birthdayMonth.value;
-
 var whichDayOfMonth = document.getElementById('day').value;
-// var whichDayOfMonth = birthdayDay.value;
 
 
-console.log(whichMonth);
 
-function calculate() {
+
+
+
+function calculate(whichMonth, whichDayOfMonth) {
   console.log( 'calcuate');
   var whichMonth = document.getElementById("month").value;
   console.log(whichMonth);
@@ -322,32 +337,34 @@ function calculate() {
   console.log(whichDayOfMonth);
 
   if ((whichMonth == 12 && whichDayOfMonth >= 22) || (whichMonth == 1 && whichDayOfMonth <= 19)) {
-    AstroSign = "mozart01";
+    mozart01();
   } else if ((whichMonth == 11 && whichDayOfMonth >= 22) || (whichMonth == 12 && whichDayOfMonth <= 21)) {
-    AstroSign = "mozart02";
+    mozart02();
   } else if ((whichMonth == 10 && whichDayOfMonth >= 24) || (whichMonth == 11 && whichDayOfMonth <= 21)) {
-    AstroSign = "beethoven";
+    beethoven();
   } else if ((whichMonth == 9 && whichDayOfMonth >= 23) || (whichMonth == 10 && whichDayOfMonth <= 23)) {
-    AstroSign = "liszt01";
+    liszt01();
   } else if ((whichMonth == 8 && whichDayOfMonth >= 23) || (whichMonth == 9 && whichDayOfMonth <= 22)) {
-    AstroSign = "liszt02";
+    liszt02();
   } else if ((whichMonth == 7 && whichDayOfMonth >= 23) || (whichMonth == 8 && whichDayOfMonth <= 22)) {
-    AstroSign = "mendelssohn";
+    mendelssohn();
   } else if ((whichMonth == 6 && whichDayOfMonth >= 22) || (whichMonth == 7 && whichDayOfMonth <= 22)) {
-    AstroSign = "chopin";
+    chopin();
   } else if ((whichMonth == 5 && whichDayOfMonth >= 21) || (whichMonth == 6 && whichDayOfMonth <= 21)) {
-    AstroSign = "bach";
+    bach();
   } else if ((whichMonth == 4 && whichDayOfMonth >= 20) || (whichMonth == 5 && whichDayOfMonth <= 20)) {
-    AstroSign = "schumann";
+    schumann();
   } else if ((whichMonth == 3 && whichDayOfMonth >= 21) || (whichMonth == 4 && whichDayOfMonth <= 19)) {
-    AstroSign = "schubert";
+    schubert();
   } else if ((whichMonth == 2 && whichDayOfMonth >= 19) || (whichMonth == 3 && whichDayOfMonth <= 20)) {
-    AstroSign = "satie";
+    satie();
   } else if ((whichMonth == 1 && whichDayOfMonth >= 20) || (whichMonth == 2 && whichDayOfMonth <= 18)) {
-    AstroSign = "debussy";
+    debussy();
   }
 
 }
+
+
 
 
 
