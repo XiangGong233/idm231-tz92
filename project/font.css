@@ -97,13 +97,45 @@
   }
 
   @font-face {
-    font-family: "BeryliumRegular";
+    font-family: "BeryliumReg";
   
     src: url("material/font/beryliumrg.woff") format("woff"), /* Modern Browsers */
       url("material/font/beryliumrg.woff2") format("woff2"); /* Modern Browsers */
     font-weight: normal;
     font-style: normal;
   }
+
+  @font-face {
+    font-family: "BeryliumRegIt";
+  
+    src: url("material/font/beryliumrgit.woff") format("woff"), /* Modern Browsers */
+      url("material/font/beryliumrgit.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  @font-face {
+    font-family: "BeryliumBd";
+  
+    src: url("material/font/beryliumbd.woff") format("woff"), /* Modern Browsers */
+      url("material/font/beryliumbd.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  @font-face {
+    font-family: "BeryliumBdIt";
+  
+    src: url("material/font/beryliumbdit.woff") format("woff"), /* Modern Browsers */
+      url("material/font/beryliumbdit.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+
 
   @font-face {
     font-family: "AlbertsthalTypewriter";

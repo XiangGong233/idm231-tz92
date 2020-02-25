@@ -594,7 +594,7 @@ information
   border-radius: 40%;
   display: grid;
   grid-template-columns: 50px  1fr 1fr  1fr 50px;
-  grid-template-rows: 30px 1fr 1fr  1fr 30px;
+  grid-template-rows: 30px 100px 1fr  1fr 30px;
   grid-gap: 10px;
   color: antiquewhite;
   margin-right: 10rem;
@@ -604,12 +604,16 @@ information
 .thisname {
   grid-area: 2/2/3/5;
   align-self: flex-start;
+  font-family: 'ArchisticoNormal' ;
+  font-size: 2.1rem;
   /* background-color: rgba(144, 238, 144, 0.5); */
 }
 
 .thismusic {
   grid-area: 2/2/3/5;
   align-self: flex-end;
+  font-family: 'BeryliumBd' ;
+  font-size: 2rem;
   /* background-color: rgba(135, 206, 250, 0.664); */
 
 }
@@ -617,6 +621,8 @@ information
 .play-music {
   grid-area: 2/2/3/5;
   margin-top: 2rem;
+  font-family: 'Areson' ;
+  font-size: 2rem;
 }
 
 .music-animation{
@@ -702,13 +708,31 @@ information
 
 .thisdescription {
   margin: 1rem;
+  width: 100%;
   grid-area: 3/2/5/5;
-  /* background-color: rgba(255, 0, 255, 0.384); */
+  color: antiquewhite;
+  font-family: 'BeryliumReg' ;
+  font-size: 1.3rem;
+  text-align: start;
+/* background-color: rgba(255, 0, 255, 0.384); */
 }
 
+.thisdescription-m {
+  margin-top: 0;
+  width: 100%;
+  height: 50%;
+  color: antiquewhite;
 
+  /* position: absolute; */
+}
 
+.thisdescription-i {
+  /* margin-top: 3rem; */
+  color: antiquewhite;
+  position: static;
 
+  /* position: absolute; */
+}
 
 
 

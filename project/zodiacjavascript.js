@@ -78,10 +78,11 @@ function fadeout() {
 // musician information list 
 // -----------------------
 
-function classicalMusic(name, music, description, image, audio) {
+function classicalMusic(name, music, descriptionM, descriptionI, image, audio) {
     this.name = name;
     this.music = music;
-    this.description = description;
+    this.descriptionM = descriptionM;
+    this.descriptionI = descriptionI;
     this.image = image;
     this.audio = audio;
     this.showInfor = function() {
@@ -93,7 +94,8 @@ function classicalMusic(name, music, description, image, audio) {
 const mozart01 = new classicalMusic(
   'Wolfgang Amadeus Mozart', 
   'Piano Sonata No. 16 in C major, K. 545 - Sonata facile - 1. Allegro', 
-  'Wolfgang Amadeus Mozart (27 January 1756 – 5 December 1791), baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period. The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.', 
+  'Wolfgang Amadeus Mozart (27 January 1756 – 5 December 1791), baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period.',
+  'The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.', 
   'material/image/mozart.jpg', 
   'material/music/mozart.mp3',
   );
@@ -101,88 +103,88 @@ const mozart01 = new classicalMusic(
 const mozart02 = new classicalMusic(
   'Wolfgang Amadeus Mozart', 
   'Piano Sonata No. 11 in A major, K. 331 - Alla Turca - 3. Rondo. Alla Turca. Allegretto', 
-  'Lorem ipsum dolor sit, amet consectetur adipisicing elit. ',
-  'material/image/mozart.jpg',
+  'Wolfgang Amadeus Mozart (27 January 1756 – 5 December 1791), baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period.',
+  'The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.',   'material/image/mozart.jpg',
   'material/music/mozart2.mp3'
   );
 
 const beethoven = new classicalMusic(
 'Ludwig van Beethoven', 
 'Moonlight Sonata -  Piano Sonata No. 14 in C♯ minor', 
-'Lorem ipsum dolor sit, amet consectetur adipisicing elit.',
-'material/image/beethoven.jpg',
+'Wolfgang Amadeus Mozart (27 January 1756 – 5 December 1791), baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period.',
+  'The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.', 'material/image/beethoven.jpg',
 'material/music/beethoven.mp3'
 );
 
 const liszt01 = new classicalMusic(
   'Liszt Ferenc', 
   'Grand Paganini Studies, S. 141 - No. 3 Study in G sharp minor. ‘La campanella’', 
-  'Lorem ipsum dolor sit, amet consectetur adipisicing elit.',
-  'material/image/liszt.jpeg',
+  'Wolfgang Amadeus Mozart (27 January 1756 – 5 December 1791), baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period.',
+  'The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.',   'material/image/liszt.jpeg',
   'material/music/liszt.mp3'
   );
 
 const liszt02 = new classicalMusic(
   'Liszt Feren', 
   '6 Transcendental Studies after Paganini, S. 140 - No. 6 Theme and Variations', 
-  'Lorem ipsum dolor sit, amet consectetur adipisicing elit.',
-  'material/image/liszt.jpeg',
+  'Wolfgang Amadeus Mozart (27 January 1756 – 5 December 1791), baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period.',
+  'The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.',   'material/image/liszt.jpeg',
   'material/music/liszt2.mp3'
   );
 
 const mendelssohn = new classicalMusic(
   'Jakob Ludwig Felix Mendelssohn Bartholdy', 
   'Felix Mendelssohn - Song without words, Op. 62 No. 6 "Spring Song"', 
-  'Lorem ipsum dolor sit, amet consectetur adipisicing elit.',
-  'material/image/mendelson.jpeg',
+  'Wolfgang Amadeus Mozart (27 January 1756 – 5 December 1791), baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period.',
+  'The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.',   'material/image/mendelson.jpeg',
   'material/music/mendelssohn.mp3'
   );
 
 const chopin = new classicalMusic(
   'Frédéric François Chopin', 
   'Nocturnes, Op. 9 Nocturne No.2 in E flat, Op.9 No.2', 
-  'Lorem ipsum dolor sit, amet consectetur adipisicing elit.',
-  'material/image/chopin.jpg',
+  'Wolfgang Amadeus Mozart (27 January 1756 – 5 December 1791), baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period.',
+  'The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.',   'material/image/chopin.jpg',
   'material/music/chopin.mp3'
   );
 
 const bach = new classicalMusic(
   'Johann Sebastian Bach', 
   'The Well-Tempered Clavier, Book 1, BWV 846-869 - No. 1 Prelude and Fugue in C major, BWV 846', 
-  'Lorem ipsum dolor sit, amet consectetur adipisicing elit.',
-  'material/image/bach.jpg',
+  'Wolfgang Amadeus Mozart (27 January 1756 – 5 December 1791), baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period.',
+  'The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.',   'material/image/bach.jpg',
   'material/music/bach.mp3'
   ); 
 
 const schumann = new classicalMusic(
   'Robert Alexander Schumann', 
   'Kinderszenen Op.15 No.7, Träumerei', 
-  'Lorem ipsum dolor sit, amet consectetur adipisicing elit.',
-  'material/image/schumann.jpg',
+  'Wolfgang Amadeus Mozart (27 January 1756 – 5 December 1791), baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period.',
+  'The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.',   'material/image/schumann.jpg',
   'material/music/schumann.mp3'
   );
 
 const schubert = new classicalMusic(
   'Franz Seraphicus Peter Schubert', 
   ' Franz Schubert D 957, No. 4 Standchen', 
-  'Lorem ipsum dolor sit, amet consectetur adipisicing elit.',
-  'material/image/schubert.jpg',
+  'Wolfgang Amadeus Mozart (27 January 1756 – 5 December 1791), baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period.',
+  'The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.',   'material/image/schubert.jpg',
   'material/music/schubert.mp3'
   ); 
 
 const satie = new classicalMusic(
   'Éric Alfred Leslie Satie', 
   'Gymnopedies No.1', 
-  'Lorem ipsum dolor sit, amet consectetur adipisicing elit.',
-  'material/image/satie.jpg',
+  'Wolfgang Amadeus Mozart (27 January 1756 – 5 December 1791), baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period.',
+  'The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.',   'material/image/satie.jpg',
   'material/music/satie.mp3'
   );
 
 const debussy = new classicalMusic(
   'Achille-Claude Debussy', 
   'CLAIR DE LUNE', 
-  'Lorem ipsum dolor sit, amet consectetur adipisicing elit.',
-  'material/image/debussy.jpg',
+  'Wolfgang Amadeus Mozart (27 January 1756 – 5 December 1791), baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period.',
+  'The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.',   'material/image/debussy.jpg',
   'material/music/debussy.mp3'
   );
 
@@ -234,13 +236,13 @@ function information() {
     } else if ((whichMonth == 5 && whichDayOfMonth >= 21) || (whichMonth == 6 && whichDayOfMonth <= 21)) {
       bach;
     } else if ((whichMonth == 4 && whichDayOfMonth >= 20) || (whichMonth == 5 && whichDayOfMonth <= 20)) {
-      schumann;
+      debussy;
     } else if ((whichMonth == 3 && whichDayOfMonth >= 21) || (whichMonth == 4 && whichDayOfMonth <= 19)) {
       schubert;
     } else if ((whichMonth == 2 && whichDayOfMonth >= 19) || (whichMonth == 3 && whichDayOfMonth <= 20)) {
       satie;
     } else if ((whichMonth == 1 && whichDayOfMonth >= 20) || (whichMonth == 2 && whichDayOfMonth <= 18)) {
-      debussy;
+      schumann; 
     }
   
 
@@ -260,9 +262,11 @@ function information() {
       const audio = document.getElementById('thisaudio');
       audio.src = musicianList[i].audio;
       
-      const description = document.getElementById('thisdescription');
-      description.innerHTML = musicianList[i].description;
+      const descriptionM = document.getElementById('thisdescription-m');
+      descriptionM.innerHTML = musicianList[i].descriptionM;
     
+      const descriptionI = document.getElementById('thisdescription-i');
+      descriptionI.innerHTML = musicianList[i].descriptionI;
     }
 
   }
@@ -359,7 +363,7 @@ function openinformodal() {
 // var whichDayOfMonth = document.getElementById('day').value;
 
 var musicPlay = document.getElementById("thisaudio");
-var isPlaying = true;
+var isPlaying = false;
 musicPlay.volume = 1;
 
 function toPlay() {
@@ -384,9 +388,9 @@ var musicOn = document.getElementById("toggle");
 musicOn.addEventListener('click', function() {
   if (musicOn.innerHTML = 'Music off') {
     musicOn.innerHTML = 'Music on';
-  } else { if (musicOn.innerHTML = 'Music on') {
+  } else  {
     musicOn.innerHTML = 'Music off';
-    }
+    
   }
 }, false);
 

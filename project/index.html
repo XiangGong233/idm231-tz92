@@ -245,7 +245,7 @@
         <h2 class="thisname" id="thisname"></h2>
         <h3 class="thismusic" id="thismusic"></h3>
         
-        <figure class="play-music">
+        <div class="play-music">
           <div id="music-animation" class="music-animation">
             <span class="bar bar1"></span>
             <span class="bar bar2"></span>
@@ -256,16 +256,18 @@
           <audio controls autoplay loop class="thisaudio" id="thisaudio" type="audio/mpeg" preload="true">
             <source src="material/music/bach.mp3">
           </audio>
-          <figcaption>
+          
             <div class="music-toggle">
               <a onClick="toPlay()" id="toggle">
                 Music off
               </a>
-          </div>
-          </figcaption>
-        </figure>
+            </div>
+        </div>
         
-        <p class="thisdescription" id="thisdescription"></p>
+        <div class="thisdescription" id="thisdescription">
+          <p class="thisdescription-m" id="thisdescription-m"></p>
+          <p class="thisdescription-i" id="thisdescription-i"></p>
+        </div>
       </div> <!-- infor-content -->
     </div> <!-- infor-container -->
   </div> 
