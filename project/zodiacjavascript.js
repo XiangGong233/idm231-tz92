@@ -1,4 +1,7 @@
 console.log("start yeah yeah")
+var musicPlay = document.getElementById("thismusic");
+// var isPlaying = false;
+musicPlay.volume = 0.2;
 
 // ------------------
 //     modal part
