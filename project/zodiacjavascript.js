@@ -390,7 +390,7 @@ musicOn.addEventListener('click', function() {
     musicOn.innerHTML = 'Music on';
   } else  {
     musicOn.innerHTML = 'Music off';
-    
+    return(musicOn);
   }
 }, false);
 
