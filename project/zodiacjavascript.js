@@ -1,7 +1,5 @@
 console.log("start yeah yeah")
-var musicPlay = document.getElementById("thismusic");
-// var isPlaying = false;
-musicPlay.volume = 0.2;
+
 
 // ------------------
 //     modal part
@@ -357,13 +355,46 @@ const playMusic = musicianMusic => {
 
 
 // -----------------
-// calculation
+// https://codepen.io/Wujek_Greg/pen/EpJwaj
 // ----------------
 
 
 
-var whichMonth = document.getElementById("month").value;
-var whichDayOfMonth = document.getElementById('day').value;
+// var whichMonth = document.getElementById("month").value;
+// var whichDayOfMonth = document.getElementById('day').value;
+
+var musicPlay = document.getElementById("thismusic");
+var isPlaying = true;
+musicPlay.volume = 1;
+
+function toPlay() {
+  if (isPlaying) {
+    musicPlay.play()
+  } else {
+    musicPlay.pause();
+  }
+};
+
+musicPlay.onplaying = function() {
+  isPlaying = true;
+  document.getElementById("music-animation").classList.add('on')
+};
+
+musicPlay.onpause = function() {
+  isPlaying = false;
+  document.getElementById("music-animation").classList.remove('on')
+};
+
+var musicOn = document.getElementById("toggle");
+musicOn.addEventListener('click', function() {
+  if (musicOn.innerHTML = 'Music off') {
+    musicOn.innerHTML = 'Music on';
+  } else { if (musicOn.innerHTML = 'Music on') {
+    musicOn.innerHTML = 'Music off';
+    }
+  }
+}, false);
+
 
 
 

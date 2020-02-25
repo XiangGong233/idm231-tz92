@@ -244,15 +244,27 @@
       <div class="infor-content">
         <h2 class="thisname" id="thisname"></h2>
         <h3 class="thismusic" id="thismusic"></h3>
-
-
-
-
-
         
-        <audio controls autoplay  class="thissound" id="thissound" type="audio/mpeg" preload="true">
-        <source src="material/music/bach.mp3">
-        </audio>
+        <figure class="play-music">
+          <div id="music-animation" class="music-animation">
+            <span class="bar bar1"></span>
+            <span class="bar bar2"></span>
+            <span class="bar bar3"></span>
+            <span class="bar bar4"></span>
+            <span class="bar bar5"></span>
+          </div>
+          <audio controls autoplay loop class="thissound" id="thissound" type="audio/mpeg" preload="true">
+            <source src="material/music/bach.mp3">
+          </audio>
+          <figcaption>
+            <div class="music-toggle">
+              <a onClick="toPlay()" id="toggle">
+                Music off
+              </a>
+          </div>
+          </figcaption>
+        </figure>
+        
         <p class="thisdescription" id="thisdescription"></p>
       </div> <!-- infor-content -->
     </div> <!-- infor-container -->

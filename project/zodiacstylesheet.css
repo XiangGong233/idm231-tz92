@@ -506,8 +506,11 @@ musician card
   overflow: hidden;
   justify-items: center;
   align-items: center;
+  font-family: 'ArchisticoNormal';
   /* transition: all 1s ease-in-out 1s; */
 }
+
+
 
 .closeinfor {
   grid-area: 1/6/-5/-1;
@@ -520,7 +523,7 @@ musician card
   background-position-x: right;
   background-position-y: top;
   position: relative;
-  margin: 1rem 0rem 0rem 1rem;
+  margin: 1.5rem 0rem 0rem 1.5rem;
   /* margin-top: 2rem;
   margin-right: 2rem; */
   filter: brightness(1);
@@ -574,9 +577,10 @@ image left
   grid-area: 1/1/2/2;
   z-index: 50;
   width: 85%;
-  height: 65%;
-  padding-top: 13%;
-  padding-bottom: 0%;
+  margin-top: 4rem;
+  /* height: 100%; */
+  /* padding: 13% 6%; */
+  /* padding-bottom: 0%; */
 }
 
 /* ------------------
@@ -610,16 +614,90 @@ information
 
 }
 
-audio {
-  appearance: none;
+.play-music {
+  grid-area: 2/2/3/5;
+  margin-top: 2rem;
 }
 
-.thissound {
+.music-animation{
+  margin-top: 3rem;
+  display: flex;
+  position: relative;
+  color: antiquewhite;
+}
+
+.music-animation .on .bar{
+      animation: bar 1.2s infinite;
+    }
+
+.music-animation .on .bar2{
+      animation-delay: .1s;
+    }
+
+.music-animation .on .bar3{
+      animation-delay: .2s;
+    }
+
+.music-animation .on .bar4{
+      animation-delay: .3s;
+    }
+
+.music-animation .on .bar5{
+      animation-delay: .4s;
+    }
+  
+
+
+
+.music-toggle{
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.music-toggle{
+    display: block;
+    width: 30%;
+    transition: .2s;
+  }
+
+.music-toggle:hover{
+  border: 1px solid azure ;
+
+  }
+
+
+.bar{
+  width: 3px;
+  background-color: rgb(168, 75, 75);
+  height: 10px;
   display: block;
+  margin: 0 2px; 
+}
+
+
+@keyframes bar{
+  0%{
+    height:4px;
+  }
+  50%{
+    height: 14px;
+  }
+  100%{
+    height: 4px;
+  }
+}
+
+
+@keyframes play {
+   100% { transform: translateX(-2400px); }
+}
+
+
+.thissound {
+  /* display: block; */
   grid-area: 2/2/3/5;
   align-self: center;
-  height: 10px;
-  /* background-color: rgba(25, 25, 112, 0.514); */
+  height: 0rem;
 }
 
 .thisdescription {
