@@ -117,7 +117,7 @@ const beethoven = new classicalMusic(
 );
 
 const liszt01 = new classicalMusic(
-  'Liszt Ferenc', 
+  'Franz Liszt', 
   'Grand Paganini Studies, S. 141 - No. 3 Study in G sharp minor. ‘La campanella’', 
   'Wolfgang Amadeus Mozart (27 January 1756 – 5 December 1791), baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period.',
   'The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.',   'material/image/liszt.jpeg',
@@ -125,7 +125,7 @@ const liszt01 = new classicalMusic(
   );
 
 const liszt02 = new classicalMusic(
-  'Liszt Feren', 
+  'Franz Liszt', 
   '6 Transcendental Studies after Paganini, S. 140 - No. 6 Theme and Variations', 
   'Wolfgang Amadeus Mozart (27 January 1756 – 5 December 1791), baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period.',
   'The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.',   'material/image/liszt.jpeg',
@@ -194,24 +194,6 @@ const debussy = new classicalMusic(
   ];
 
 
-//   function getClassName() {
-//     // let i = 0;
-    
-//     // while (musicianList[i]) {
-//     //   console.log(musicianList[i]);
-//     //   musicianList[i].showInfor();
-
-//     //   i++;
-//     // }
-
-// for (let i = 0; i < musicianList.length; i++) {
-//       console.log(musicianList[i]);
-//       musicianList[i].showInfor();
-
-//       i++;
-//     }
-//   }
-
 function information() {
 
     var whichMonth = document.getElementById("month").value;
@@ -247,7 +229,7 @@ function information() {
   
 
   for (let i = 0; i < musicianList.length; i++) {
-    console.log([i]);
+    console.log(musicianList[i].name);
 
       const image = document.getElementById('thisimage');
       image.src = musicianList[i].image;
@@ -271,13 +253,36 @@ function information() {
 
   }
 
+function musicianFlipCard() {
+  for (let i = 0; i < musicianList.length; i++) {
+    
+  }
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 // -------------------------
 //   musician page
 // -----------------------------
-
-
-
 
 const musician = document.querySelectorAll('.musician');
 const inforbox = document.getElementById('infor-box');
@@ -336,13 +341,39 @@ function openinformodal() {
 
 // ----------------
 // audio
-// -----------------
-// const playMusic = musicianMusic => {
-//   musicianMusic.play();
-// }
+
+// music bar and biubiubiu
+
+// https://codepen.io/Wujek_Greg/pen/EpJwaj
+// https://stackoverflow.com/questions/20616430/html5-javascript-play-pause-button
+// https://www.developphp.com/lib/JavaScript/Audio
+// ----------------
+
+var musicPlay = document.getElementById("thisaudio");
+// var isPlaying = true;
+// musicPlay.volume = 1;
+var musicOn = document.getElementById("music-on");
+
+function toPlay() {
+  if (musicPlay.paused) {
+    musicPlay.currentTime = 0;
+    musicPlay.play(); 
+    musicOn.innerHTML = 'Music On';
+    document.getElementById("music-animation").classList.add('on');
+} else {
+    musicPlay.pause(); 
+    musicOn.innerHTML = 'Music Off';
+    document.getElementById("music-animation").classList.remove('on');
+  }
+};
 
 
- function test() {
+
+
+
+
+
+function test() {
   console.log( 'test test test test test ');
   var whichMonth = document.getElementById("month").value;
   console.log(whichMonth);
@@ -350,56 +381,6 @@ function openinformodal() {
   console.log(whichDayOfMonth);
   console.log(musicianList.length);
 }
-
-
-
-// -----------------
-// https://codepen.io/Wujek_Greg/pen/EpJwaj
-// ----------------
-
-
-
-// var whichMonth = document.getElementById("month").value;
-// var whichDayOfMonth = document.getElementById('day').value;
-
-var musicPlay = document.getElementById("thisaudio");
-var isPlaying = false;
-musicPlay.volume = 1;
-
-function toPlay() {
-  if (isPlaying) {
-    musicPlay.play()
-  } else {
-    musicPlay.pause();
-  }
-};
-
-musicPlay.onplaying = function() {
-  isPlaying = true;
-  document.getElementById("music-animation").classList.add('on')
-};
-
-musicPlay.onpause = function() {
-  isPlaying = false;
-  document.getElementById("music-animation").classList.remove('on')
-};
-
-var musicOn = document.getElementById("toggle");
-musicOn.addEventListener('click', function() {
-  if (musicOn.innerHTML = 'Music off') {
-    musicOn.innerHTML = 'Music on';
-  } else  {
-    musicOn.innerHTML = 'Music off';
-    return(musicOn);
-  }
-}, false);
-
-
-
-
-
-
-
 
 
 
