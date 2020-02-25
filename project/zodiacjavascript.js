@@ -78,12 +78,12 @@ function fadeout() {
 // musician information list 
 // -----------------------
 
-function classicalMusic(name, music, description, image, sound) {
+function classicalMusic(name, music, description, image, audio) {
     this.name = name;
     this.music = music;
     this.description = description;
     this.image = image;
-    this.sound = sound;
+    this.audio = audio;
     this.showInfor = function() {
       console.log(this.name + ' is the author of ' + this.music + ' and here is the description of this classical music ---- ' + this.description);
     }
@@ -93,7 +93,7 @@ function classicalMusic(name, music, description, image, sound) {
 const mozart01 = new classicalMusic(
   'Wolfgang Amadeus Mozart', 
   'Piano Sonata No. 16 in C major, K. 545 - Sonata facile - 1. Allegro', 
-  'Lorem ipsum dolor sit, amet consectetur adipisicing elit.', 
+  'Wolfgang Amadeus Mozart (27 January 1756 – 5 December 1791), baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period. The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.', 
   'material/image/mozart.jpg', 
   'material/music/mozart.mp3',
   );
@@ -257,8 +257,8 @@ function information() {
       const music = document.getElementById('thismusic');
       music.innerHTML = musicianList[i].music;
     
-      const sound = document.getElementById('thissound');
-      sound.src = musicianList[i].sound;
+      const audio = document.getElementById('thisaudio');
+      audio.src = musicianList[i].audio;
       
       const description = document.getElementById('thisdescription');
       description.innerHTML = musicianList[i].description;
@@ -331,16 +331,11 @@ function openinformodal() {
 };
 
 // ----------------
-// sound
+// audio
 // -----------------
-const playMusic = musicianMusic => {
-  musicianMusic.play();
-}
-
-
-
-
-
+// const playMusic = musicianMusic => {
+//   musicianMusic.play();
+// }
 
 
  function test() {
@@ -363,7 +358,7 @@ const playMusic = musicianMusic => {
 // var whichMonth = document.getElementById("month").value;
 // var whichDayOfMonth = document.getElementById('day').value;
 
-var musicPlay = document.getElementById("thismusic");
+var musicPlay = document.getElementById("thisaudio");
 var isPlaying = true;
 musicPlay.volume = 1;
 
