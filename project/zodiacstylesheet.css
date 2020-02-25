@@ -570,10 +570,11 @@ image left
 
 .thisimage {
   justify-self: center;
-  align-self: center;
+  /* align-self: center; */
   grid-area: 1/1/2/2;
   z-index: 50;
   width: 85%;
+  padding-top: 13%;
 }
 
 /* ------------------
@@ -584,23 +585,31 @@ information
   grid-area: 2/4/6/6;
   width: 100%;
   height: 100%;
-  background-color: rgba(240, 128, 128, 0.664);
+  border-radius: 40%;
   display: grid;
   grid-template-columns: 50px  1fr 1fr  1fr 50px;
   grid-template-rows: 30px 1fr 1fr  1fr 30px;
   grid-gap: 10px;
+  color: antiquewhite;
+  margin-right: 10rem;
 }
+
 
 .thisname {
   grid-area: 2/2/3/5;
   align-self: flex-start;
-  background-color: rgba(144, 238, 144, 0.5);
+  /* background-color: rgba(144, 238, 144, 0.5); */
 }
 
 .thismusic {
   grid-area: 2/2/3/5;
   align-self: flex-end;
-  background-color: rgba(135, 206, 250, 0.664);
+  /* background-color: rgba(135, 206, 250, 0.664); */
+
+}
+
+audio {
+  appearance: none;
 }
 
 .thissound {
@@ -608,13 +617,13 @@ information
   grid-area: 2/2/3/5;
   align-self: center;
   height: 10px;
-  background-color: rgba(25, 25, 112, 0.514);
+  /* background-color: rgba(25, 25, 112, 0.514); */
 }
 
 .thisdescription {
   margin: 1rem;
   grid-area: 3/2/5/5;
-  background-color: rgba(255, 0, 255, 0.384);
+  /* background-color: rgba(255, 0, 255, 0.384); */
 }
 
 
