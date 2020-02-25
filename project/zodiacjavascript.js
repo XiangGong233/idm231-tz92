@@ -262,7 +262,6 @@ function information() {
       const description = document.getElementById('thisdescription');
       description.innerHTML = musicianList[i].description;
     
-    i++;
     }
 
   }
