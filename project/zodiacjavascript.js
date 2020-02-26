@@ -208,6 +208,11 @@ const debussy = new classicalMusic(
     'chopin', 'bach', 'schumann', 'schubert', 'satie', 'debussy'
   ];
 
+// ------------------
+// claculation
+// ------------------
+
+
 function information() {
 
     var whichMonth = document.getElementById("month").value;
@@ -272,33 +277,41 @@ function information() {
 
 // document.getElementById(btnbach).onclick = bach;
 
-  for (let i = 0; i < musicianNameList.length; i++) {
-    console.log( `btn` + musicianNameList[i]);
-    document.getElementById(`btn` + musicianNameList[i])
-    // console.log( tttt );
+  // for (let i = 0; i < musicianNameList.length; i++) {
+  //   console.log( `btn` + musicianNameList[i]);
+  //   document.getElementById(`btn` + musicianNameList[i])
+  // }
 
-    // const tttt = document.getElementsByClassName(`btn` + musicianNameList[i]);
-  }
-
-  var testarray = document.getElementsByClassName("currentclass");
-for(var i = 0; i < testarray.length; i++)
-{
-    testarray[i].className += "classtobeadded";
-}
-
-function musicianFlipCard() {
   for (let i = 0; i < musicianList.length; i++) {
-    console.log(`btn` + musicianList[i]);
-    document.getElementById(`m` + [i]).classList.add();
+    var testtest = document.getElementById(`btn` + musicianNameList[i]);
   }
 
+console.log(testtest)
 
+  function musicianFlipCard() {
+    openinformodal();
 
-
-
-
-
-}
+      const image = document.getElementById('thisimage');
+        image.src = musicianList[i].image;
+        image.alt = musicianList[i].name;
+      
+        const name = document.getElementById('thisname');
+        name.innerHTML = musicianList[i].name;
+      
+        const music = document.getElementById('thismusic');
+        music.innerHTML = musicianList[i].music;
+      
+        const audio = document.getElementById('thisaudio');
+        audio.src = musicianList[i].audio;
+        
+        const descriptionM = document.getElementById('thisdescription-m');
+        descriptionM.innerHTML = musicianList[i].descriptionM;
+      
+        const descriptionI = document.getElementById('thisdescription-i');
+        descriptionI.innerHTML = musicianList[i].descriptionI;
+    }
+  
+  
 
 
 // -------------------------
@@ -330,6 +343,8 @@ function closeinformodal() {
   modalOpen.classList.remove('fadeout');
   modalOpen.classList.add('fadein');
   
+  musicPlay.pause(); 
+
 }
 
 
