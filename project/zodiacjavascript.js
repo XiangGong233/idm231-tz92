@@ -93,7 +93,7 @@ function classicalMusic(name, music, descriptionM, descriptionI, image, audio) {
 
 const mozart01 = new classicalMusic(
   'Wolfgang Amadeus Mozart', 
-  'Piano Sonata No. 16 in C major, K. 545 - Sonata facile - 1. Allegro', 
+  'Piano Sonata No. 16 in C major', 
   'Wolfgang Amadeus Mozart (27 January 1756 – 5 December 1791), baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period.',
   'The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.', 
   'material/image/mozart.jpg', 
@@ -102,7 +102,7 @@ const mozart01 = new classicalMusic(
 
 const mozart02 = new classicalMusic(
   'Wolfgang Amadeus Mozart', 
-  'Piano Sonata No. 11 in A major, K. 331 - Alla Turca - 3. Rondo. Alla Turca. Allegretto', 
+  'Piano Sonata No. 11 in A major', 
   'Wolfgang Amadeus Mozart (27 January 1756 – 5 December 1791), baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period.',
   'The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.',   
   'material/image/mozart.jpg',
@@ -111,7 +111,7 @@ const mozart02 = new classicalMusic(
 
 const beethoven = new classicalMusic(
 'Ludwig van Beethoven', 
-'Moonlight Sonata -  Piano Sonata No. 14 in C♯ minor', 
+'Moonlight Sonata', 
 'Wolfgang Amadeus Mozart (27 January 1756 – 5 December 1791), baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period.',
   'The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.', 'material/image/beethoven.jpg',
   'material/music/beethoven.mp3'
@@ -119,7 +119,7 @@ const beethoven = new classicalMusic(
 
 const liszt01 = new classicalMusic(
   'Franz Liszt', 
-  'Grand Paganini Studies, S. 141 - No. 3 Study in G sharp minor. ‘La campanella’', 
+  'Grand Paganini Studies', 
   'Wolfgang Amadeus Mozart (27 January 1756 – 5 December 1791), baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period.',
   'The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.',   
   'material/image/liszt.jpeg',
@@ -128,7 +128,7 @@ const liszt01 = new classicalMusic(
 
 const liszt02 = new classicalMusic(
   'Franz Liszt', 
-  '6 Transcendental Studies after Paganini, S. 140 - No. 6 Theme and Variations', 
+  '6 Transcendental Studies after Paganini', 
   'Wolfgang Amadeus Mozart (27 January 1756 – 5 December 1791), baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period.',
   'The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.',   
   'material/image/liszt.jpeg',
@@ -137,7 +137,7 @@ const liszt02 = new classicalMusic(
 
 const mendelssohn = new classicalMusic(
   'Jakob Ludwig Felix Mendelssohn Bartholdy', 
-  'Felix Mendelssohn - Song without words, Op. 62 No. 6 "Spring Song"', 
+  'Song without words, Op. 62 No. 6 "Spring Song"', 
   'Wolfgang Amadeus Mozart (27 January 1756 – 5 December 1791), baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period.',
   'The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.',   
   'material/image/mendelson.jpeg',
@@ -155,7 +155,7 @@ const chopin = new classicalMusic(
 
 const bach = new classicalMusic(
   'Johann Sebastian Bach', 
-  'The Well-Tempered Clavier, Book 1, BWV 846-869 - No. 1 Prelude and Fugue in C major, BWV 846', 
+  'The Well-Tempered Clavier, Book 1', 
   'Wolfgang Amadeus Mozart (27 January 1756 – 5 December 1791), baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period.',
   'The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.',   
   'material/image/bach.jpg',
@@ -225,7 +225,7 @@ function information() {
       AstroSign = mozart01;
     } else if ((whichMonth == 11 && whichDayOfMonth >= 22) || (whichMonth == 12 && whichDayOfMonth <= 21)) {
       openinformodal();
-      AstroSign = mozart02;
+      AstroSign = mendelssohn;
     } else if ((whichMonth == 10 && whichDayOfMonth >= 24) || (whichMonth == 11 && whichDayOfMonth <= 21)) {
       openinformodal();
       AstroSign = beethoven;
@@ -237,7 +237,7 @@ function information() {
       AstroSign = liszt02;
     } else if ((whichMonth == 7 && whichDayOfMonth >= 23) || (whichMonth == 8 && whichDayOfMonth <= 22)) {
       openinformodal();
-      AstroSign = mendelssohn;
+      AstroSign = mozart02;
     } else if ((whichMonth == 6 && whichDayOfMonth >= 22) || (whichMonth == 7 && whichDayOfMonth <= 22)) {
       openinformodal();
       AstroSign = chopin;
@@ -258,62 +258,95 @@ function information() {
       AstroSign = schumann; 
     } else if ((whichMonth == 0 && whichDayOfMonth >= 0) || (whichMonth == 0 && whichDayOfMonth <= 0)) {
       alert('Please enter a vaild date!');
-    } else if ((whichMonth == 2 && whichDayOfMonth > 29) || (whichMonth == 4 && whichDayOfMonth > 30) || (whichMonth == 6 && whichDayOfMonth > 30) || (whichMonth == 9 && whichDayOfMonth > 30) || (whichMonth == 11 && whichDayOfMonth > 30)) { windows.alart('Please enter a vaild date!'); }
+    } else if ((whichMonth == 2 && whichDayOfMonth > 29) || (whichMonth == 4 && whichDayOfMonth > 30) || (whichMonth == 6 && whichDayOfMonth > 30) || (whichMonth == 9 && whichDayOfMonth > 30) || (whichMonth == 11 && whichDayOfMonth > 30)) { alart('Please enter a vaild date!'); }
 
-
- 
-    // console.log(musicianList[i].name);
-
-      const image = document.getElementById('thisimage');
-      image.src = AstroSign.image;
-      image.alt = AstroSign.name;
-    
-      const name = document.getElementById('thisname');
-      name.innerHTML = AstroSign.name;
-    
-      const music = document.getElementById('thismusic');
-      music.innerHTML = AstroSign.music;
-    
-      const audio = document.getElementById('thisaudio');
-      audio.src = AstroSign.audio;
-      
-      const descriptionM = document.getElementById('thisdescription-m');
-      descriptionM.innerHTML = AstroSign.descriptionM;
-    
-      const descriptionI = document.getElementById('thisdescription-i');
-      descriptionI.innerHTML = AstroSign.descriptionI;
-    
+    AstroSignName();    
   }
 
-// document.getElementById(btnbach).onclick = bach;
+function AstroSignName() {
+  const image = document.getElementById('thisimage');
+  image.src = AstroSign.image;
+  image.alt = AstroSign.name;
 
-  // for (let i = 0; i < musicianNameList.length; i++) {
-  //   console.log( `btn` + musicianNameList[i]);
-  //   document.getElementById(`btn` + musicianNameList[i])
-  // }
+  const name = document.getElementById('thisname');
+  name.innerHTML = AstroSign.name;
 
-  // for (let i = 0; i < musicianList.length; i++) {
-  //   var testtest = document.getElementById(`btn` + musicianNameList[i]);
-  //   console.log(testtest);
+  const music = document.getElementById('thismusic');
+  music.innerHTML = AstroSign.music;
 
-  // }
+  const audio = document.getElementById('thisaudio');
+  audio.src = AstroSign.audio;
+  
+  const descriptionM = document.getElementById('thisdescription-m');
+  descriptionM.innerHTML = AstroSign.descriptionM;
+
+  const descriptionI = document.getElementById('thisdescription-i');
+  descriptionI.innerHTML = AstroSign.descriptionI;
+}
+
+const musicBtn = document.querySelectorAll('musicbtn');
 
 
-  function musicianFlipCard(x) {
+function musicianFlipCard() {
+
+  if (musicBtn.id = 'btnbach') {
+    AstroSign = bach;
     openinformodal();
-    if (x === btnbach) {
-      bach;
-    } else if ((whichMonth == 11 && whichDayOfMonth >= 22) || (whichMonth == 12 && whichDayOfMonth <= 21)) {
-      mozart02;
-    
-    
-    
-    
-    }
+    console.log(window.musicBtn.id);
 
-  
-  
+  } else if (musicBtn.id = 'btnbeethoven'){
+    AstroSign = beethoven;
+    openinformodal();
+  } else if (musicBtn.id = 'btnchopin'){
+    AstroSign = chopin;
+    openinformodal();
+  } else if (musicBtn.id = 'btndebussy'){
+    AstroSign = debussy;
+    openinformodal();
+  } else if (musicBtn.id = 'btnliszr01'){
+    AstroSign = liszt01;
+    openinformodal();
+  } else if (musicBtn.id = 'btnmendlson'){
+    AstroSign = mendelssohn;
+    openinformodal();
+  } else if (musicBtn.id = 'btnmozart01'){
+    AstroSign = mozart02;
+    openinformodal();
+  } else if (musicBtn.id = 'btnsatie'){
+    AstroSign = satie;
+    openinformodal();
+  } else if (musicBtn.id = 'btnschubert'){
+    AstroSign = schubert;
+    openinformodal();
+  } else if (musicBtn.id = 'btnschumann'){
+    AstroSign = schumann;
+    openinformodal();
+  } else if (musicBtn.id = 'btnliszt02'){
+    AstroSign = liszt02;
+    openinformodal();
+  } else if (musicBtn.id = 'btnbmozart02'){
+    AstroSign = mozart02;
+    openinformodal();
   }
+
+
+  AstroSignName();    
+
+
+
+// musicBtn.forEach(musicianButton => {
+//   musicianButton.addEventListener('click', function () {
+//     const AstroSign = document.getElementById(this.id);
+//     AstroSignName();openinformodal();
+//     return AstroSign;
+//   }, false); 
+//   });
+}
+  
+
+// if (document.getElementById('btnbach')){
+//   const AstroSign = btnbach;
+// }
 
 
 // -------------------------
