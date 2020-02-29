@@ -94,7 +94,7 @@ function classicalMusic(name, music, descriptionM, descriptionI, image, audio) {
 const mozart01 = new classicalMusic(
   'Wolfgang Amadeus Mozart', 
   'Piano Sonata No. 16 in C major', 
-  'Wolfgang Amadeus Mozart (27 January 1756 – 5 December 1791), baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period.',
+  'Wolfgang Amadeus Mozart, baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period.',
   'The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.', 
   'material/image/mozart.jpg', 
   'material/music/mozart.mp3',
@@ -103,8 +103,8 @@ const mozart01 = new classicalMusic(
 const mozart02 = new classicalMusic(
   'Wolfgang Amadeus Mozart', 
   'Piano Sonata No. 11 in A major', 
-  'Wolfgang Amadeus Mozart (27 January 1756 – 5 December 1791), baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period.',
-  'The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.',   
+  'Wolfgang Amadeus Mozart, baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period.',
+  'The Piano Sonata No. 11 in A major, K. 331 / 300i, by Wolfgang Amadeus Mozart is a piano sonata in three movements. Mozart likely composed the sonata while in Vienna or Salzburg by around 1783, although Paris and dates as far back as 1778 have also been suggested. The sonata was published by Artaria in 1784, alongside Nos. 10 and 12 (K. 330 and K. 332).',   
   'material/image/mozart.jpg',
   'material/music/mozart2.mp3'
   );
@@ -112,15 +112,16 @@ const mozart02 = new classicalMusic(
 const beethoven = new classicalMusic(
 'Ludwig van Beethoven', 
 'Moonlight Sonata', 
-'Wolfgang Amadeus Mozart (27 January 1756 – 5 December 1791), baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period.',
-  'The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.', 'material/image/beethoven.jpg',
+'Ludwig van Beethoven was a German composer and pianist. He was a crucial figure in the transition between the classical and romantic eras in classical music and is considered to be one of the greatest composers of all time.',
+  'The name "Moonlight Sonata" comes from remarks made by the German music critic and poet Ludwig Rellstab. In 1832, five years after Beethoven\'s death, Rellstab likened the effect of the first movement to that of moonlight shining upon Lake Lucerne. Within ten years, the name "Moonlight Sonata" ("Mondscheinsonate" in German) was being used in German and English publications. Later in the nineteenth century, the sonata was universally known by that name.', 
+  'material/image/beethoven.jpg',
   'material/music/beethoven.mp3'
 );
 
 const liszt01 = new classicalMusic(
   'Franz Liszt', 
   'Grand Paganini Studies', 
-  'Wolfgang Amadeus Mozart (27 January 1756 – 5 December 1791), baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period.',
+  'Franz Liszt was a Hungarian composer, virtuoso pianist, conductor, music teacher, arranger, and organist of the Romantic era. He was also a writer, a philanthropist, a Hungarian nationalist, and a Franciscan tertiary.',
   'The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.',   
   'material/image/liszt.jpeg',
   'material/music/liszt.mp3'
@@ -129,26 +130,26 @@ const liszt01 = new classicalMusic(
 const liszt02 = new classicalMusic(
   'Franz Liszt', 
   '6 Transcendental Studies after Paganini', 
-  'Wolfgang Amadeus Mozart (27 January 1756 – 5 December 1791), baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period.',
+  'Franz Liszt was a Hungarian composer, virtuoso pianist, conductor, music teacher, arranger, and organist of the Romantic era. He was also a writer, a philanthropist, a Hungarian nationalist, and a Franciscan tertiary.',
   'The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.',   
   'material/image/liszt.jpeg',
   'material/music/liszt2.mp3'
   );
 
 const mendelssohn = new classicalMusic(
-  'Jakob Ludwig Felix Mendelssohn Bartholdy', 
+  'Felix Mendelssohn', 
   'Song without words, Op. 62 No. 6 "Spring Song"', 
-  'Wolfgang Amadeus Mozart (27 January 1756 – 5 December 1791), baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period.',
-  'The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.',   
+  'Jakob Ludwig Felix Mendelssohn Bartholdy, born and widely known as Felix Mendelssohn, was a German composer, pianist, organist and conductor of the early Romantic period. ',
+  'The eight volumes of Songs Without Words, each consisting of six "songs" (Lieder), were written at various points throughout Mendelssohn\'s life, and were published separately. The piano became increasingly popular in Europe during the early nineteenth century, when it became a standard item in many middle-class households. The pieces are within the grasp of pianists of various abilities and this undoubtedly contributed to their popularity. This great popularity has caused many critics to under-rate their musical value.',   
   'material/image/mendelson.jpeg',
   'material/music/mendelssohn.mp3'
   );
 
 const chopin = new classicalMusic(
   'Frédéric François Chopin', 
-  'Nocturnes, Op. 9 Nocturne No.2 in E flat, Op.9 No.2', 
-  'Wolfgang Amadeus Mozart (27 January 1756 – 5 December 1791), baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period.',
-  'The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.',   
+  'Nocturnes Op. 9 No.2', 
+  'Frédéric François Chopin was a Polish composer and virtuoso pianist of the Romantic era who wrote primarily for solo piano. ',
+  'The Nocturnes, Op. 9 are a set of three nocturnes written by Frédéric Chopin between 1830 and 1832, published that year, and dedicated to Madame Marie Pleyel. The second nocturne of the work is regarded as Chopin\'s most famous piece.This nocturne has a rhythmic freedom that came to characterise Chopin\'s later work. The left hand has an unbroken sequence of eighth notes in simple arpeggios throughout the entire piece, while the right hand moves with freedom in patterns of seven, eleven, twenty, and twenty-two notes.',   
   'material/image/chopin.jpg',
   'material/music/chopin.mp3'
   );
@@ -156,8 +157,8 @@ const chopin = new classicalMusic(
 const bach = new classicalMusic(
   'Johann Sebastian Bach', 
   'The Well-Tempered Clavier, Book 1', 
-  'Wolfgang Amadeus Mozart (27 January 1756 – 5 December 1791), baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period.',
-  'The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.',   
+  'Johann Sebastian Bach was a German composer and musician of the Baroque period. Since the 19th-century Bach Revival he has generally been regarded as one of the greatest composers of all time.',
+  'The Well-Tempered Clavier, BWV 846–893, is a collection of two sets of preludes and fugues in all 24 major and minor keys, composed for solo keyboard by Johann Sebastian Bach. The modern German spelling for the collection is Das wohltemperierte Klavier. Bach gave the title Das Wohltemperirte Clavier to a book of preludes and fugues in all 24 major and minor keys, dated 1722, composed "for the profit and use of musical youth desirous of learning, and especially for the pastime of those already skilled in this study". ',   
   'material/image/bach.jpg',
   'material/music/bach.mp3'
   ); 
@@ -165,16 +166,16 @@ const bach = new classicalMusic(
 const schumann = new classicalMusic(
   'Robert Alexander Schumann', 
   'Kinderszenen Op.15 No.7, Träumerei', 
-  'Wolfgang Amadeus Mozart (27 January 1756 – 5 December 1791), baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period.',
-  'The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.',   
+  'Robert Schumann was a German composer, pianist, and influential music critic. He is widely regarded as one of the greatest composers of the Romantic era. Schumann left the study of law, intending to pursue a career as a virtuoso pianist. ',
+  'Schumann wrote 30 movements for this work but chose 13 for the final version. The unused movements were later published in Bunte Blätter, Op. 99, and Albumblätter, Op. 124. Schumann initially intended to publish Kinderszenen together with Novelletten (Opus 21); the shared literary theme is suggested by the original title Kindergeschichten (Children\s Tales). He described them in 1840 as "more cheerful, gentler, more melodic" than his earlier works.',   
   'material/image/schumann.jpg',
   'material/music/schumann.mp3'
   );
 
 const schubert = new classicalMusic(
   'Franz Seraphicus Peter Schubert', 
-  ' Franz Schubert D 957, No. 4 Standchen', 
-  'Wolfgang Amadeus Mozart (27 January 1756 – 5 December 1791), baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period.',
+  'D 957, No. 4 Standchen', 
+  'Franz Peter Schubert was an Austrian composer of the late Classical and early Romantic eras. Despite his short lifetime, Schubert left behind a vast oeuvre, including more than 600 secular vocal works (mainly lieder) and a large body of piano and chamber music.',
   'The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.',   
   'material/image/schubert.jpg',
   'material/music/schubert.mp3'
