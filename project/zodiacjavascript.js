@@ -248,11 +248,11 @@ function information() {
       alert('Please enter a vaild date!');
     } else if ((whichMonth == 2 && whichDayOfMonth > 29) || (whichMonth == 4 && whichDayOfMonth > 30) || (whichMonth == 6 && whichDayOfMonth > 30) || (whichMonth == 9 && whichDayOfMonth > 30) || (whichMonth == 11 && whichDayOfMonth > 30)) { windows.alart('Please enter a vaild date!'); }
 
-
+    astrosign 
   
 
   for (let i = 0; i < musicianList.length; i++) {
-    console.log(musicianList[i].name);
+    // console.log(musicianList[i].name);
 
       const image = document.getElementById('thisimage');
       image.src = musicianList[i].image;
@@ -284,34 +284,26 @@ function information() {
 
   for (let i = 0; i < musicianList.length; i++) {
     var testtest = document.getElementById(`btn` + musicianNameList[i]);
+    console.log(testtest);
+
   }
 
-console.log(testtest)
 
-  function musicianFlipCard() {
+  function musicianFlipCard(x) {
     openinformodal();
-
-      const image = document.getElementById('thisimage');
-        image.src = musicianList[i].image;
-        image.alt = musicianList[i].name;
-      
-        const name = document.getElementById('thisname');
-        name.innerHTML = musicianList[i].name;
-      
-        const music = document.getElementById('thismusic');
-        music.innerHTML = musicianList[i].music;
-      
-        const audio = document.getElementById('thisaudio');
-        audio.src = musicianList[i].audio;
-        
-        const descriptionM = document.getElementById('thisdescription-m');
-        descriptionM.innerHTML = musicianList[i].descriptionM;
-      
-        const descriptionI = document.getElementById('thisdescription-i');
-        descriptionI.innerHTML = musicianList[i].descriptionI;
+    if (x === btnbach) {
+      bach;
+    } else if ((whichMonth == 11 && whichDayOfMonth >= 22) || (whichMonth == 12 && whichDayOfMonth <= 21)) {
+      mozart02;
+    
+    
+    
+    
     }
+
   
   
+  }
 
 
 // -------------------------
@@ -323,7 +315,13 @@ const inforbox = document.getElementById('infor-box');
 const inforcontainer = document.getElementsByClassName('infor-container');
 const closeinfor = document.getElementsByClassName('closeinfor');
 
-document.getElementById('listen').onclick = openinformodal;
+document.getElementById('listen').onclick = inforModal;
+
+function inforModal() {
+  openinformodal(); information();
+}
+
+
 
 // const listen = document.getElementsById('listen');
 // listen.addEventListener('click', test, false)
@@ -347,8 +345,6 @@ function closeinformodal() {
 
 }
 
-
-
 function openinformodal() {
 
   console.log('musician content test');
@@ -371,7 +367,7 @@ function openinformodal() {
   // modal.classList.add('layback');
   // modal.classList.add('fadeout');
   modal.classList.remove('fadein');
-  information();
+  // information();
 
 };
 
@@ -402,12 +398,6 @@ function toPlay() {
     document.getElementById("music-animation").classList.remove('on');
   }
 };
-
-
-
-
-
-
 
 function test() {
   console.log( 'test test test test test ');
