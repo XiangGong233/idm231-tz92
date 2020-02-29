@@ -220,59 +220,69 @@ function information() {
     var whichDayOfMonth = document.getElementById('day').value;
     console.log(whichDayOfMonth);
   
-    if ((whichMonth == 12 && whichDayOfMonth >= 22) || (whichMonth == 1 && whichDayOfMonth <= 19)) {
-      mozart01;
+    if ((whichMonth == 12 && whichDayOfMonth >= 22) || (whichMonth == 1 && whichDayOfMonth <= 19)) { 
+      openinformodal();
+      AstroSign = mozart01;
     } else if ((whichMonth == 11 && whichDayOfMonth >= 22) || (whichMonth == 12 && whichDayOfMonth <= 21)) {
-      mozart02;
+      openinformodal();
+      AstroSign = mozart02;
     } else if ((whichMonth == 10 && whichDayOfMonth >= 24) || (whichMonth == 11 && whichDayOfMonth <= 21)) {
-      beethoven;
+      openinformodal();
+      AstroSign = beethoven;
     } else if ((whichMonth == 9 && whichDayOfMonth >= 23) || (whichMonth == 10 && whichDayOfMonth <= 23)) {
-      liszt01;
+      openinformodal();
+      AstroSign = liszt01;
     } else if ((whichMonth == 8 && whichDayOfMonth >= 23) || (whichMonth == 9 && whichDayOfMonth <= 22)) {
-      liszt02;
+      openinformodal();
+      AstroSign = liszt02;
     } else if ((whichMonth == 7 && whichDayOfMonth >= 23) || (whichMonth == 8 && whichDayOfMonth <= 22)) {
-      mendelssohn;
+      openinformodal();
+      AstroSign = mendelssohn;
     } else if ((whichMonth == 6 && whichDayOfMonth >= 22) || (whichMonth == 7 && whichDayOfMonth <= 22)) {
-      chopin;
+      openinformodal();
+      AstroSign = chopin;
     } else if ((whichMonth == 5 && whichDayOfMonth >= 21) || (whichMonth == 6 && whichDayOfMonth <= 21)) {
-      bach;
+      openinformodal();
+      AstroSign = bach;
     } else if ((whichMonth == 4 && whichDayOfMonth >= 20) || (whichMonth == 5 && whichDayOfMonth <= 20)) {
-      debussy;
+      openinformodal();
+      AstroSign = debussy;
     } else if ((whichMonth == 3 && whichDayOfMonth >= 21) || (whichMonth == 4 && whichDayOfMonth <= 19)) {
-      schubert;
+      openinformodal();
+      AstroSign = schubert;
     } else if ((whichMonth == 2 && whichDayOfMonth >= 19) || (whichMonth == 3 && whichDayOfMonth <= 20)) {
-      satie;
+      openinformodal();
+      AstroSign = satie;
     } else if ((whichMonth == 1 && whichDayOfMonth >= 20) || (whichMonth == 2 && whichDayOfMonth <= 18)) {
-      schumann; 
+      openinformodal();
+      AstroSign = schumann; 
     } else if ((whichMonth == 0 && whichDayOfMonth >= 0) || (whichMonth == 0 && whichDayOfMonth <= 0)) {
       alert('Please enter a vaild date!');
     } else if ((whichMonth == 2 && whichDayOfMonth > 29) || (whichMonth == 4 && whichDayOfMonth > 30) || (whichMonth == 6 && whichDayOfMonth > 30) || (whichMonth == 9 && whichDayOfMonth > 30) || (whichMonth == 11 && whichDayOfMonth > 30)) { windows.alart('Please enter a vaild date!'); }
 
-    astrosign 
-  
 
-  for (let i = 0; i < musicianList.length; i++) {
+ 
     // console.log(musicianList[i].name);
 
       const image = document.getElementById('thisimage');
-      image.src = musicianList[i].image;
-      image.alt = musicianList[i].name;
+      image.src = AstroSign.image;
+      image.alt = AstroSign.name;
     
       const name = document.getElementById('thisname');
-      name.innerHTML = musicianList[i].name;
+      name.innerHTML = AstroSign.name;
     
       const music = document.getElementById('thismusic');
-      music.innerHTML = musicianList[i].music;
+      music.innerHTML = AstroSign.music;
     
       const audio = document.getElementById('thisaudio');
-      audio.src = musicianList[i].audio;
+      audio.src = AstroSign.audio;
       
       const descriptionM = document.getElementById('thisdescription-m');
-      descriptionM.innerHTML = musicianList[i].descriptionM;
+      descriptionM.innerHTML = AstroSign.descriptionM;
     
       const descriptionI = document.getElementById('thisdescription-i');
-      descriptionI.innerHTML = musicianList[i].descriptionI;
-    }
+      descriptionI.innerHTML = AstroSign.descriptionI;
+    
   }
 
 // document.getElementById(btnbach).onclick = bach;
@@ -282,11 +292,11 @@ function information() {
   //   document.getElementById(`btn` + musicianNameList[i])
   // }
 
-  for (let i = 0; i < musicianList.length; i++) {
-    var testtest = document.getElementById(`btn` + musicianNameList[i]);
-    console.log(testtest);
+  // for (let i = 0; i < musicianList.length; i++) {
+  //   var testtest = document.getElementById(`btn` + musicianNameList[i]);
+  //   console.log(testtest);
 
-  }
+  // }
 
 
   function musicianFlipCard(x) {
@@ -315,11 +325,11 @@ const inforbox = document.getElementById('infor-box');
 const inforcontainer = document.getElementsByClassName('infor-container');
 const closeinfor = document.getElementsByClassName('closeinfor');
 
-document.getElementById('listen').onclick = inforModal;
+// document.getElementById('listen').onclick = inforModal;
 
-function inforModal() {
-  openinformodal(); information();
-}
+// function inforModal() {
+//   openinformodal(); information();
+// }
 
 
 
