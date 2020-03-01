@@ -132,7 +132,7 @@ const liszt02 = new classicalMusic(
   '6 Transcendental Studies after Paganini', 
   'Franz Liszt was a Hungarian composer, virtuoso pianist, conductor, music teacher, arranger, and organist of the Romantic era. He was also a writer, a philanthropist, a Hungarian nationalist, and a Franciscan tertiary.',
   'The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.',   
-  'material/image/liszt.jpeg',
+  'material/image/liszt2.jpg',
   'material/music/liszt2.mp3'
   );
 
@@ -173,7 +173,7 @@ const schumann = new classicalMusic(
   );
 
 const schubert = new classicalMusic(
-  'Franz Seraphicus Peter Schubert', 
+  'Franz Peter Schubert', 
   'D 957, No. 4 Standchen', 
   'Franz Peter Schubert was an Austrian composer of the late Classical and early Romantic eras. Despite his short lifetime, Schubert left behind a vast oeuvre, including more than 600 secular vocal works (mainly lieder) and a large body of piano and chamber music.',
   'The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.',   
@@ -290,60 +290,63 @@ const musicBtn = document.querySelectorAll('musicbtn');
 
 function musicianFlipCard() {
 
-  if (musicBtn.id = 'btnbach') {
-    AstroSign = bach;
-    openinformodal();
-    console.log(window.musicBtn.id);
+  // if (musicBtn.id = 'btnbach') {
+  //   AstroSign = bach;
+  //   openinformodal();
+  //   console.log(AstroSign);
 
-  } else if (musicBtn.id = 'btnbeethoven'){
-    AstroSign = beethoven;
-    openinformodal();
-  } else if (musicBtn.id = 'btnchopin'){
-    AstroSign = chopin;
-    openinformodal();
-  } else if (musicBtn.id = 'btndebussy'){
-    AstroSign = debussy;
-    openinformodal();
-  } else if (musicBtn.id = 'btnliszr01'){
-    AstroSign = liszt01;
-    openinformodal();
-  } else if (musicBtn.id = 'btnmendlson'){
-    AstroSign = mendelssohn;
-    openinformodal();
-  } else if (musicBtn.id = 'btnmozart01'){
-    AstroSign = mozart02;
-    openinformodal();
-  } else if (musicBtn.id = 'btnsatie'){
-    AstroSign = satie;
-    openinformodal();
-  } else if (musicBtn.id = 'btnschubert'){
-    AstroSign = schubert;
-    openinformodal();
-  } else if (musicBtn.id = 'btnschumann'){
-    AstroSign = schumann;
-    openinformodal();
-  } else if (musicBtn.id = 'btnliszt02'){
-    AstroSign = liszt02;
-    openinformodal();
-  } else if (musicBtn.id = 'btnbmozart02'){
-    AstroSign = mozart02;
-    openinformodal();
-  }
+  // } else if (musicBtn.id = 'btnbeethoven'){
+  //   AstroSign = beethoven;
+  //   openinformodal();
+  // } else if (musicBtn.id = 'btnchopin'){
+  //   AstroSign = chopin;
+  //   openinformodal();
+  // } else if (musicBtn.id = 'btndebussy'){
+  //   AstroSign = debussy;
+  //   openinformodal();
+  // } else if (musicBtn.id = 'btnliszr01'){
+  //   AstroSign = liszt01;
+  //   openinformodal();
+  // } else if (musicBtn.id = 'btnmendlson'){
+  //   AstroSign = mendelssohn;
+  //   openinformodal();
+  // } else if (musicBtn.id = 'btnmozart01'){
+  //   AstroSign = mozart02;
+  //   openinformodal();
+  // } else if (musicBtn.id = 'btnsatie'){
+  //   AstroSign = satie;
+  //   openinformodal();
+  // } else if (musicBtn.id = 'btnschubert'){
+  //   AstroSign = schubert;
+  //   openinformodal();
+  // } else if (musicBtn.id = 'btnschumann'){
+  //   AstroSign = schumann;
+  //   openinformodal();
+  // } else if (musicBtn.id = 'btnliszt02'){
+  //   AstroSign = liszt02;
+  //   openinformodal();
+  // } else if (musicBtn.id = 'btnbmozart02'){
+  //   AstroSign = mozart02;
+  //   openinformodal();
+  // }
 
-
-  AstroSignName();    
-
+  // AstroSignName();    
 
 
-// musicBtn.forEach(musicianButton => {
-//   musicianButton.addEventListener('click', function () {
-//     const AstroSign = document.getElementById(this.id);
-//     AstroSignName();openinformodal();
-//     return AstroSign;
-//   }, false); 
-//   });
+
+
+musicBtn.forEach( function () {
+    addEventListener('click', function () {
+    AstroSign = document.getElementById(this.id);
+    AstroSignName();openinformodal();
+    return AstroSign;
+  }, false); 
+});
 }
   
+// for (let i = 0; i < musicBtn.length; i++) {
+//   console.log(i);
+// };
 
 // if (document.getElementById('btnbach')){
 //   const AstroSign = btnbach;
