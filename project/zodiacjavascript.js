@@ -285,64 +285,30 @@ function AstroSignName() {
   descriptionI.innerHTML = AstroSign.descriptionI;
 }
 
-const musicBtn = document.querySelectorAll('musicbtn');
+const musicBtn = document.querySelectorAll('.musicbtn');
 
 
 function musicianFlipCard() {
-
-  // if (musicBtn.id = 'btnbach') {
-  //   AstroSign = bach;
-  //   openinformodal();
-  //   console.log(AstroSign);
-
-  // } else if (musicBtn.id = 'btnbeethoven'){
-  //   AstroSign = beethoven;
-  //   openinformodal();
-  // } else if (musicBtn.id = 'btnchopin'){
-  //   AstroSign = chopin;
-  //   openinformodal();
-  // } else if (musicBtn.id = 'btndebussy'){
-  //   AstroSign = debussy;
-  //   openinformodal();
-  // } else if (musicBtn.id = 'btnliszr01'){
-  //   AstroSign = liszt01;
-  //   openinformodal();
-  // } else if (musicBtn.id = 'btnmendlson'){
-  //   AstroSign = mendelssohn;
-  //   openinformodal();
-  // } else if (musicBtn.id = 'btnmozart01'){
-  //   AstroSign = mozart02;
-  //   openinformodal();
-  // } else if (musicBtn.id = 'btnsatie'){
-  //   AstroSign = satie;
-  //   openinformodal();
-  // } else if (musicBtn.id = 'btnschubert'){
-  //   AstroSign = schubert;
-  //   openinformodal();
-  // } else if (musicBtn.id = 'btnschumann'){
-  //   AstroSign = schumann;
-  //   openinformodal();
-  // } else if (musicBtn.id = 'btnliszt02'){
-  //   AstroSign = liszt02;
-  //   openinformodal();
-  // } else if (musicBtn.id = 'btnbmozart02'){
-  //   AstroSign = mozart02;
-  //   openinformodal();
-  // }
-
-  // AstroSignName();    
+  
+}
 
 
 
+musicBtn.forEach(musicButton => {
+  const musicianId = musicButton.id;
+  console.log(musicianId);
 
-musicBtn.forEach( function () {
-    addEventListener('click', function () {
-    AstroSign = document.getElementById(this.id);
-    AstroSignName();openinformodal();
+    musicButton.addEventListener('click',  () => {
+      console.log(musicianId);
+    const AstroSign = musicianId.onclick;
+    AstroSignName();
+    openinformodal();
     return AstroSign;
   }, false); 
 });
-}
+
+
+
   
 // for (let i = 0; i < musicBtn.length; i++) {
 //   console.log(i);
