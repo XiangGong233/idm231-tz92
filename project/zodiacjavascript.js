@@ -289,7 +289,54 @@ const musicBtn = document.querySelectorAll('.musicbtn');
 
 
 function musicianFlipCard() {
-  
+
+  // if (musicBtn.id = 'btnbach') {
+  //   AstroSign = bach;
+  //   openinformodal();
+  //   console.log(AstroSign);
+
+  // } else if (musicBtn.id = 'btnbeethoven'){
+  //   AstroSign = beethoven;
+  //   openinformodal();
+  //   console.log(AstroSign);
+
+  // } else if (musicBtn.id = 'btnchopin'){
+  //   AstroSign = chopin;
+  //   openinformodal();
+  //   console.log(AstroSign);
+
+  // } else if (musicBtn.id = 'btndebussy'){
+  //   AstroSign = debussy;
+  //   openinformodal();
+  //   console.log(AstroSign);
+
+  // } else if (musicBtn.id = 'btnliszr01'){
+  //   AstroSign = liszt01;
+  //   openinformodal();
+  // } else if (musicBtn.id = 'btnmendlson'){
+  //   AstroSign = mendelssohn;
+  //   openinformodal();
+  // } else if (musicBtn.id = 'btnmozart01'){
+  //   AstroSign = mozart02;
+  //   openinformodal();
+  // } else if (musicBtn.id = 'btnsatie'){
+  //   AstroSign = satie;
+  //   openinformodal();
+  // } else if (musicBtn.id = 'btnschubert'){
+  //   AstroSign = schubert;
+  //   openinformodal();
+  // } else if (musicBtn.id = 'btnschumann'){
+  //   AstroSign = schumann;
+  //   openinformodal();
+  // } else if (musicBtn.id = 'btnliszt02'){
+  //   AstroSign = liszt02;
+  //   openinformodal();
+  // } else if (musicBtn.id = 'btnbmozart02'){
+  //   AstroSign = mozart02;
+  //   openinformodal();
+  // }
+
+  AstroSignName();    
 }
 
 
@@ -299,8 +346,6 @@ musicBtn.forEach(musicButton => {
   console.log(musicianId);
 
     musicButton.addEventListener('click',  () => {
-      console.log(musicianId);
-    const AstroSign = musicianId.onclick;
     AstroSignName();
     openinformodal();
     return AstroSign;
