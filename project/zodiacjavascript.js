@@ -346,9 +346,9 @@ musicBtn.forEach(musicButton => {
   console.log(musicianId);
 
     musicButton.addEventListener('click',  () => {
+      
     AstroSignName();
     openinformodal();
-    return AstroSign;
   }, false); 
 });
 
