@@ -341,27 +341,47 @@ function musicianFlipCard() {
 
 
 
-musicBtn.forEach(musicButton => {
-  const musicianId = musicButton.id;
-  console.log(musicianId);
+// musicBtn.forEach(musicButton => {
+//   const musicianId = musicButton.id;
+//   console.log(musicianId);
 
-    musicButton.addEventListener('click',  () => {
-      
-    AstroSignName();
-    openinformodal();
-  }, false); 
-});
+//     musicButton.addEventListener('click',  () => {
+    
+//     AstroSignName();
+//     openinformodal();
+//   }, false); 
+// });
+
+const mozart02id = document.getElementById('mozart02');
+mozart02id.addEventListener('click',  () => {
+  AstroSign = mozart02;
+  AstroSignName();
+  openinformodal();
+}, false); 
+
+const liszt02id = document.getElementById('liszt02');
+liszt02id.addEventListener('click',  () => {
+  AstroSign = liszt02;
+  AstroSignName();
+  openinformodal();
+}, false); 
+
+const schumannid = document.getElementById('schumann');
+schumannid.addEventListener('click',  () => {
+  AstroSign = schumann;
+  AstroSignName();
+  openinformodal();
+}, false); 
+
+const schubertid = document.getElementById('schubert');
+schubertid.addEventListener('click',  () => {
+  AstroSign = schubert;
+  AstroSignName();
+  openinformodal();
+}, false); 
 
 
 
-  
-// for (let i = 0; i < musicBtn.length; i++) {
-//   console.log(i);
-// };
-
-// if (document.getElementById('btnbach')){
-//   const AstroSign = btnbach;
-// }
 
 
 // -------------------------
@@ -373,16 +393,7 @@ const inforbox = document.getElementById('infor-box');
 const inforcontainer = document.getElementsByClassName('infor-container');
 const closeinfor = document.getElementsByClassName('closeinfor');
 
-// document.getElementById('listen').onclick = inforModal;
 
-// function inforModal() {
-//   openinformodal(); information();
-// }
-
-
-
-// const listen = document.getElementsById('listen');
-// listen.addEventListener('click', test, false)
 
 function closeinformodal() {
   console.log('close musician information modal');
@@ -426,7 +437,7 @@ function openinformodal() {
   // modal.classList.add('fadeout');
   modal.classList.remove('fadein');
   // information();
-
+  toPlay();
 };
 
 // ----------------
