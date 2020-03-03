@@ -264,7 +264,7 @@ function information() {
     AstroSignName();    
   }
 
-function AstroSignName() {
+function AstroSignName(AstroSign) {
   const image = document.getElementById('thisimage');
   image.src = AstroSign.image;
   image.alt = AstroSign.name;
@@ -341,44 +341,45 @@ function musicianFlipCard() {
 
 
 
-// musicBtn.forEach(musicButton => {
-//   const musicianId = musicButton.id;
-//   console.log(musicianId);
+musicBtn.forEach(musicButton => {
+  const musicianId = musicButton.id;
+  console.log(musicianId);
 
-//     musicButton.addEventListener('click',  () => {
-    
-//     AstroSignName();
-//     openinformodal();
-//   }, false); 
-// });
+    musicButton.addEventListener('click', (event) => {
+      const AstroSign = event.target.id;
+    console.log(event);
+    AstroSignName(AstroSign);
+    openinformodal();
+  }, false); 
+});
 
-const mozart02id = document.getElementById('mozart02');
-mozart02id.addEventListener('click',  () => {
-  AstroSign = mozart02;
-  AstroSignName();
-  openinformodal();
-}, false); 
+// const mozart02id = document.getElementById('mozart02');
+// mozart02id.addEventListener('click',  () => {
+//   AstroSign = mozart02;
+//   AstroSignName();
+//   openinformodal();
+// }, false); 
 
-const liszt02id = document.getElementById('liszt02');
-liszt02id.addEventListener('click',  () => {
-  AstroSign = liszt02;
-  AstroSignName();
-  openinformodal();
-}, false); 
+// const liszt02id = document.getElementById('liszt02');
+// liszt02id.addEventListener('click',  () => {
+//   AstroSign = liszt02;
+//   AstroSignName();
+//   openinformodal();
+// }, false); 
 
-const schumannid = document.getElementById('schumann');
-schumannid.addEventListener('click',  () => {
-  AstroSign = schumann;
-  AstroSignName();
-  openinformodal();
-}, false); 
+// const schumannid = document.getElementById('schumann');
+// schumannid.addEventListener('click',  () => {
+//   AstroSign = schumann;
+//   AstroSignName();
+//   openinformodal();
+// }, false); 
 
-const schubertid = document.getElementById('schubert');
-schubertid.addEventListener('click',  () => {
-  AstroSign = schubert;
-  AstroSignName();
-  openinformodal();
-}, false); 
+// const schubertid = document.getElementById('schubert');
+// schubertid.addEventListener('click',  () => {
+//   AstroSign = schubert;
+//   AstroSignName();
+//   openinformodal();
+// }, false); 
 
 
 
