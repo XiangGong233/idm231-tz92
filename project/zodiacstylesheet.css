@@ -188,6 +188,10 @@ select {
   color: antiquewhite;
 }
 
+option {
+  text-align: center;
+}
+
 /* 
 ---------------------
 button part
@@ -276,7 +280,7 @@ button {
       background-size: cover;
       background-repeat: no-repeat;
       border: 10px groove rgb(196, 129, 52);
-      transition: all 2s ease-in-out;
+      transition: all 0.2s ease-in-out;
       cursor: pointer;
       background-image: url(material/image/mozartsmall.jpg);
     }
@@ -676,7 +680,7 @@ information
   }
 
 .music-toggle:hover{
-  animation: borderout 1s ease-in-out 500ms infinite;  
+  animation: borderout 1s ease-in-out 500ms forwards;  
 }
 
 .bar{
@@ -691,14 +695,9 @@ information
   0%{
     border-left: 3px dotted rgba(255, 236, 242, 0.589);
   }
-  25%{
-    border-bottom: 3px dotted rgba(255, 240, 245, 0.534);
-  }
-  75%{
-    border-right: 3px dotted rgba(255, 240, 245, 0.247);
-  }
+
   100%{
-    border-top: 3px dotted rgba(255, 240, 245, 0.247);
+    border-left: 4px dashed rgb(255, 222, 233, 0.8);
   }
 }
 
