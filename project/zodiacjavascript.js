@@ -105,7 +105,7 @@ const mozart02 = new classicalMusic(
   'Piano Sonata No. 11 in A major', 
   'Wolfgang Amadeus Mozart, baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period.',
   'The Piano Sonata No. 11 in A major, K. 331 / 300i, by Wolfgang Amadeus Mozart is a piano sonata in three movements. Mozart likely composed the sonata while in Vienna or Salzburg by around 1783, although Paris and dates as far back as 1778 have also been suggested. The sonata was published by Artaria in 1784, alongside Nos. 10 and 12 (K. 330 and K. 332).',   
-  'material/image/mozart.jpg',
+  'material/image/mozart2.jpg',
   'material/music/mozart2.mp3'
   );
 
@@ -175,9 +175,9 @@ const schumann = new classicalMusic(
 const schubert = new classicalMusic(
   'Franz Peter Schubert', 
   'D 957, No. 4 Standchen', 
-  'Franz Peter Schubert was an Austrian composer of the late Classical and early Romantic eras. Despite his short lifetime, Schubert left behind a vast oeuvre, including more than 600 secular vocal works (mainly lieder) and a large body of piano and chamber music.',
+  'Franz Peter Schubert was an Austrian composer of the late Classical and early Romantic eras. Despite his short lifetime, Schubert left behind a vast oeuvre, including more than 600 secular vocal works and a large body of piano music.',
   'The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.',   
-  'material/image/schubert.jpg',
+  'material/image/youngschubet.jpg',
   'material/music/schubert.mp3'
   ); 
 
@@ -203,7 +203,7 @@ const debussy = new classicalMusic(
     mozart01, mozart02, beethoven, liszt01, liszt02, mendelssohn,
     chopin, bach, schumann, schubert, satie, debussy
   ];
-
+  
   var musicianNameList = [
     'mozart01', 'mozart02', 'beethoven', 'liszt01', 'liszt02', 'mendelssohn',
     'chopin', 'bach', 'schumann', 'schubert', 'satie', 'debussy'
@@ -214,7 +214,7 @@ const debussy = new classicalMusic(
 // ------------------
 
 
-function information() {
+function information() { 
 
     var whichMonth = document.getElementById("month").value;
     console.log(whichMonth);
@@ -261,7 +261,8 @@ function information() {
       alert('Please enter a vaild date!');
     } else if ((whichMonth == 2 && whichDayOfMonth > 29) || (whichMonth == 4 && whichDayOfMonth > 30) || (whichMonth == 6 && whichDayOfMonth > 30) || (whichMonth == 9 && whichDayOfMonth > 30) || (whichMonth == 11 && whichDayOfMonth > 30)) { alart('Please enter a vaild date!'); }
 
-    AstroSignName();    
+    AstroSignName();   
+    console.log(AstroSign.name) 
   }
 
 function AstroSignName() {
@@ -305,6 +306,8 @@ function AstroSignName02(AstroSign) {
   const descriptionI = document.getElementById('thisdescription-i');
   descriptionI.innerHTML = AstroSign.descriptionI;
 }
+
+
 
 const musicBtn = document.querySelectorAll('.musicbtn');
 
@@ -360,50 +363,105 @@ function musicianFlipCard() {
   AstroSignName();    
 }
 
+// musicBtn.forEach(musicButton => {
+//   const musicianId = musicButton.id;
+//   console.log(musicianId);
 
+//     musicButton.addEventListener('click', (event) => {
+//       const AstroSign = event.target.id;
+//     console.log(AstroSign);
+//     AstroSignName02(AstroSign);
+//     openinformodal();
+//   }, false); 
+// });
 
-musicBtn.forEach(musicButton => {
-  const musicianId = musicButton.id;
-  console.log(musicianId);
+const mozart02id = document.getElementById('mozart02');
+mozart02id.addEventListener('click',  () => {
+  AstroSign = mozart02;
+  AstroSignName();
+  openinformodal();
+}, false); 
 
-    musicButton.addEventListener('click', (event) => {
-      const AstroSign = event.target.id;
-    console.log(event);
-    AstroSignName(AstroSign);
-    openinformodal();
-  }, false); 
-});
+const liszt02id = document.getElementById('liszt02');
+liszt02id.addEventListener('click',  () => {
+  AstroSign = liszt02;
+  AstroSignName();
+  openinformodal();
+}, false); 
 
-// const mozart02id = document.getElementById('mozart02');
-// mozart02id.addEventListener('click',  () => {
-//   AstroSign = mozart02;
-//   AstroSignName();
-//   openinformodal();
-// }, false); 
+const schumannid = document.getElementById('schumann');
+schumannid.addEventListener('click',  () => {
+  AstroSign = schumann;
+  AstroSignName();
+  openinformodal();
+}, false); 
 
-// const liszt02id = document.getElementById('liszt02');
-// liszt02id.addEventListener('click',  () => {
-//   AstroSign = liszt02;
-//   AstroSignName();
-//   openinformodal();
-// }, false); 
+const schubertid = document.getElementById('schubert');
+schubertid.addEventListener('click',  () => {
+  AstroSign = schubert;
+  AstroSignName();
+  openinformodal();
+}, false); 
 
-// const schumannid = document.getElementById('schumann');
-// schumannid.addEventListener('click',  () => {
-//   AstroSign = schumann;
-//   AstroSignName();
-//   openinformodal();
-// }, false); 
+// ------------------------------------------------
 
-// const schubertid = document.getElementById('schubert');
-// schubertid.addEventListener('click',  () => {
-//   AstroSign = schubert;
-//   AstroSignName();
-//   openinformodal();
-// }, false); 
+const satietid = document.getElementById('satie');
+satietid.addEventListener('click',  () => {
+  AstroSign = satie;
+  AstroSignName();
+  openinformodal();
+}, false); 
 
+const mozart01id = document.getElementById('mozart01');
+mozart01id.addEventListener('click',  () => {
+  AstroSign = mozart01;
+  AstroSignName();
+  openinformodal();
+}, false); 
 
+const mendlsonid = document.getElementById('mendlsson');
+mendlsonid.addEventListener('click',  () => {
+  AstroSign = mendelssohn;
+  AstroSignName();
+  openinformodal();
+}, false); 
 
+const liszt01id = document.getElementById('liszt01');
+liszt01id.addEventListener('click',  () => {
+  AstroSign = liszt01;
+  AstroSignName();
+  openinformodal();
+}, false); 
+
+// ----------------------------------------
+
+const debussyid = document.getElementById('debussy');
+debussyid.addEventListener('click',  () => {
+  AstroSign = debussy;
+  AstroSignName();
+  openinformodal();
+}, false); 
+
+const chopinid = document.getElementById('chopin');
+chopinid.addEventListener('click',  () => {
+  AstroSign = chopin;
+  AstroSignName();
+  openinformodal();
+}, false); 
+
+const beethovenid = document.getElementById('beethoven');
+beethovenid.addEventListener('click',  () => {
+  AstroSign = beethoven;
+  AstroSignName();
+  openinformodal();
+}, false); 
+
+const bachid = document.getElementById('bach');
+bachid.addEventListener('click',  () => {
+  AstroSign = bach;
+  AstroSignName();
+  openinformodal();
+}, false); 
 
 
 // -------------------------
@@ -498,7 +556,6 @@ function test() {
   console.log(whichDayOfMonth);
   console.log(musicianList.length);
 }
-
 
 
 
