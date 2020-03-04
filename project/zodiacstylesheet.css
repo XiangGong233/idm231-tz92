@@ -470,23 +470,22 @@ rotate
   color: rgb(148, 74, 52);
   transform: rotateY( 180deg );
   text-align: center;
+  cursor: pointer;
   
 }
 
-h3 {
+input {
+  font-family: 'courgetteregular', 'Helvetica Neue', 'Segoe UI', 'Calibri', 'Arial', sans-serif;
+  font-size: 1.3rem;
+}
+
+/* h3 {
   padding-top: 2.4rem;
   font-size: 1.3rem;
   font-family: 'courgetteregular', 'Helvetica Neue', 'Segoe UI', 'Calibri', 'Arial', sans-serif;
-}
-
-/* div.frontface {
-
-}
-
-div.backface {
-
-
 } */
+
+
 
 
 

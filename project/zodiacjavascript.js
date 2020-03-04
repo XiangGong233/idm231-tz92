@@ -264,7 +264,28 @@ function information() {
     AstroSignName();    
   }
 
-function AstroSignName(AstroSign) {
+function AstroSignName() {
+  const image = document.getElementById('thisimage');
+  image.src = AstroSign.image;
+  image.alt = AstroSign.name;
+
+  const name = document.getElementById('thisname');
+  name.innerHTML = AstroSign.name;
+
+  const music = document.getElementById('thismusic');
+  music.innerHTML = AstroSign.music;
+
+  const audio = document.getElementById('thisaudio');
+  audio.src = AstroSign.audio;
+  
+  const descriptionM = document.getElementById('thisdescription-m');
+  descriptionM.innerHTML = AstroSign.descriptionM;
+
+  const descriptionI = document.getElementById('thisdescription-i');
+  descriptionI.innerHTML = AstroSign.descriptionI;
+}
+
+function AstroSignName02(AstroSign) {
   const image = document.getElementById('thisimage');
   image.src = AstroSign.image;
   image.alt = AstroSign.name;
