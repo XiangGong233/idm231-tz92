@@ -120,9 +120,9 @@ const beethoven = new classicalMusic(
 
 const liszt01 = new classicalMusic(
   'Franz Liszt', 
-  'Grand Paganini Studies', 
+  'Grandes études de Paganini', 
   'Franz Liszt was a Hungarian composer, virtuoso pianist, conductor, music teacher, arranger, and organist of the Romantic era. He was also a writer, a philanthropist, a Hungarian nationalist, and a Franciscan tertiary.',
-  'The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.',   
+  'The Grandes études de Paganini, S. 141, are a series of six études for the piano by Franz Liszt, revised in 1851 from an earlier version (published as Études d\'exécution transcendante d\'après Paganini, S. 140, in 1838). It is almost exclusively in the final version that these pieces are played today. The pieces are all based on the compositions of Niccolò Paganini for violin, and are among the most technically demanding pieces in the piano literature. The pieces run the gamut of technical hurdles, and frequently require very large stretches by the performer of an eleventh.',   
   'material/image/liszt.jpeg',
   'material/music/liszt.mp3'
   );
