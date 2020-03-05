@@ -307,10 +307,7 @@ function AstroSignName02(AstroSign) {
   descriptionI.innerHTML = AstroSign.descriptionI;
 }
 
-
-
 const musicBtn = document.querySelectorAll('.musicbtn');
-
 
 function musicianFlipCard() {
 
@@ -363,105 +360,26 @@ function musicianFlipCard() {
   AstroSignName();    
 }
 
-// musicBtn.forEach(musicButton => {
-//   const musicianId = musicButton.id;
-//   console.log(musicianId);
+musicBtn.forEach(musicButton => {
 
-//     musicButton.addEventListener('click', (event) => {
-//       const AstroSign = event.target.id;
-//     console.log(AstroSign);
-//     AstroSignName02(AstroSign);
-//     openinformodal();
-//   }, false); 
-// });
+    musicButton.addEventListener('click', (event) => {
+      const selected = event.target.id;
+      console.log(eval(selected))
+      const AstroSign = eval(selected);
+      console.log(AstroSign);
+      AstroSignName02(AstroSign);
+      openinformodal();
+  }, false); 
+});
 
-const mozart02id = document.getElementById('mozart02');
-mozart02id.addEventListener('click',  () => {
-  AstroSign = mozart02;
-  AstroSignName();
-  openinformodal();
-}, false); 
 
-const liszt02id = document.getElementById('liszt02');
-liszt02id.addEventListener('click',  () => {
-  AstroSign = liszt02;
-  AstroSignName();
-  openinformodal();
-}, false); 
 
-const schumannid = document.getElementById('schumann');
-schumannid.addEventListener('click',  () => {
-  AstroSign = schumann;
-  AstroSignName();
-  openinformodal();
-}, false); 
-
-const schubertid = document.getElementById('schubert');
-schubertid.addEventListener('click',  () => {
-  AstroSign = schubert;
-  AstroSignName();
-  openinformodal();
-}, false); 
-
-// ------------------------------------------------
-
-const satietid = document.getElementById('satie');
-satietid.addEventListener('click',  () => {
-  AstroSign = satie;
-  AstroSignName();
-  openinformodal();
-}, false); 
-
-const mozart01id = document.getElementById('mozart01');
-mozart01id.addEventListener('click',  () => {
-  AstroSign = mozart01;
-  AstroSignName();
-  openinformodal();
-}, false); 
-
-const mendlsonid = document.getElementById('mendlsson');
-mendlsonid.addEventListener('click',  () => {
-  AstroSign = mendelssohn;
-  AstroSignName();
-  openinformodal();
-}, false); 
-
-const liszt01id = document.getElementById('liszt01');
-liszt01id.addEventListener('click',  () => {
-  AstroSign = liszt01;
-  AstroSignName();
-  openinformodal();
-}, false); 
-
-// ----------------------------------------
-
-const debussyid = document.getElementById('debussy');
-debussyid.addEventListener('click',  () => {
-  AstroSign = debussy;
-  AstroSignName();
-  openinformodal();
-}, false); 
-
-const chopinid = document.getElementById('chopin');
-chopinid.addEventListener('click',  () => {
-  AstroSign = chopin;
-  AstroSignName();
-  openinformodal();
-}, false); 
-
-const beethovenid = document.getElementById('beethoven');
-beethovenid.addEventListener('click',  () => {
-  AstroSign = beethoven;
-  AstroSignName();
-  openinformodal();
-}, false); 
-
-const bachid = document.getElementById('bach');
-bachid.addEventListener('click',  () => {
-  AstroSign = bach;
-  AstroSignName();
-  openinformodal();
-}, false); 
+// const mozart02id = document.getElementById('mozart02');
+// mozart02id.addEventListener('click',  () => {
+//   AstroSign = mozart02;
+//   AstroSignName();
+//   openinformodal();
+// }, false); 
 
 
 // -------------------------
