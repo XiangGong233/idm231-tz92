@@ -100,13 +100,13 @@ const mozart01 = new classicalMusic(
   'material/music/mozart.mp3',
   );
 
-const mozart02 = new classicalMusic(
-  'Wolfgang Amadeus Mozart', 
+const brahms = new classicalMusic(
+  'Johannes Brahms', 
   'Piano Sonata No. 11 in A major', 
-  'Wolfgang Amadeus Mozart, baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period.',
-  'The Piano Sonata No. 11 in A major, K. 331 / 300i, by Wolfgang Amadeus Mozart is a piano sonata in three movements. Mozart likely composed the sonata while in Vienna or Salzburg by around 1783, although Paris and dates as far back as 1778 have also been suggested. The sonata was published by Artaria in 1784, alongside Nos. 10 and 12 (K. 330 and K. 332).',   
-  'material/image/mozart2.jpg',
-  'material/music/mozart2.mp3'
+  'Johannes Brahms was a German composer, pianist, and conductor of the Romantic period. Brahms reputation and status as a composer are such that he is sometimes grouped with Johann Sebastian Bach and Ludwig van Beethoven as one of the "Three Bs" of music.',
+  'The Hungarian Dances by Johannes Brahms (WoO 1), are a set of 21 lively dance tunes based mostly on Hungarian themes, completed in 1879. Each dance has been arranged for a wide variety of instruments and ensembles. The better-known Hungarian Dances include Nos. 1 and 5, the latter of which was based on the csárdás "Bártfai emlék" (Memories of Bártfa) by Hungarian composer Béla Kéler, which Brahms mistakenly thought was a traditional folksong. ',   
+  'material/image/brahms.jpg',
+  'material/music/brahms.mp3'
   );
 
 const beethoven = new classicalMusic(
@@ -118,22 +118,22 @@ const beethoven = new classicalMusic(
   'material/music/beethoven.mp3'
 );
 
-const liszt01 = new classicalMusic(
+const liszt = new classicalMusic(
   'Franz Liszt', 
-  'Grandes études de Paganini', 
+  'No. 3 in G-Sharp Minor, "La campanella"', 
   'Franz Liszt was a Hungarian composer, virtuoso pianist, conductor, music teacher, arranger, and organist of the Romantic era. He was also a writer, a philanthropist, a Hungarian nationalist, and a Franciscan tertiary.',
   'The Grandes études de Paganini, S. 141, are a series of six études for the piano by Franz Liszt, revised in 1851 from an earlier version (published as Études d\'exécution transcendante d\'après Paganini, S. 140, in 1838). It is almost exclusively in the final version that these pieces are played today. The pieces are all based on the compositions of Niccolò Paganini for violin, and are among the most technically demanding pieces in the piano literature. The pieces run the gamut of technical hurdles, and frequently require very large stretches by the performer of an eleventh.',   
   'material/image/liszt.jpeg',
   'material/music/liszt.mp3'
   );
 
-const liszt02 = new classicalMusic(
-  'Franz Liszt', 
-  '6 Transcendental Studies after Paganini', 
-  'Franz Liszt was a Hungarian composer, virtuoso pianist, conductor, music teacher, arranger, and organist of the Romantic era. He was also a writer, a philanthropist, a Hungarian nationalist, and a Franciscan tertiary.',
-  'The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.',   
-  'material/image/liszt2.jpg',
-  'material/music/liszt2.mp3'
+const rachmaninoff  = new classicalMusic(
+  'Sergei Rachmaninoff', 
+  'Prelude Op.23 No.5 in G minor', 
+  'Sergei Vasilyevich Rachmaninoff was a Russian composer, virtuoso pianist, and conductor of the late Romantic period. In his works, later giving way to a personal style notable for song-like melodicism, expressiveness and rich orchestral colors.',
+  'Prelude in G minor, Op. 23, No. 5, is a piece of music by Sergei Rachmaninoff, completed in 1901. It was included in his Opus 23 set of ten preludes, despite having been written two years earlier than the other nine. Rachmaninoff himself premiered the piece in Moscow on February 10, 1903, along with Preludes No. 1 and 2 from Op. 23.',   
+  'material/image/rachmaninoff.jpg',
+  'material/music/rachmaninoff.mp3'
   );
 
 const mendelssohn = new classicalMusic(
@@ -148,7 +148,7 @@ const mendelssohn = new classicalMusic(
 const chopin = new classicalMusic(
   'Frédéric François Chopin', 
   'Nocturnes Op. 9 No.2', 
-  'Frédéric François Chopin was a Polish composer and virtuoso pianist of the Romantic era who wrote primarily for solo piano. ',
+  'Frédéric François Chopin was a Polish composer and virtuoso pianist of the Romantic era who wrote primarily for solo piano. He has maintained worldwide renown as a leading musician of his era.',
   'The Nocturnes, Op. 9 are a set of three nocturnes written by Frédéric Chopin between 1830 and 1832, published that year, and dedicated to Madame Marie Pleyel. The second nocturne of the work is regarded as Chopin\'s most famous piece.This nocturne has a rhythmic freedom that came to characterise Chopin\'s later work. The left hand has an unbroken sequence of eighth notes in simple arpeggios throughout the entire piece, while the right hand moves with freedom in patterns of seven, eleven, twenty, and twenty-two notes.',   
   'material/image/chopin.jpg',
   'material/music/chopin.mp3'
@@ -176,16 +176,16 @@ const schubert = new classicalMusic(
   'Franz Peter Schubert', 
   'D 957, No. 4 Standchen', 
   'Franz Peter Schubert was an Austrian composer of the late Classical and early Romantic eras. Despite his short lifetime, Schubert left behind a vast oeuvre, including more than 600 secular vocal works and a large body of piano music.',
-  'The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.',   
+  'Schwanengesang, D 957, is a collection of songs written by Franz Schubert at the end of his life and published posthumously. The collection was named by its first publisher Tobias Haslinger, presumably wishing to present it as Schubert\'s final musical testament to the world. All the song titles are by Schubert, as Heine did not give names to the poems. (Reed 259) Tobias Haslinger, Schubert\'s publisher, collected the songs together as a cycle, most possibly for financial reasons, as Die schöne Müllerin and Die Winterreise collections sold very well. "Die Taubenpost" is considered to be Schubert\'s last Lied.',   
   'material/image/youngschubet.jpg',
   'material/music/schubert.mp3'
   ); 
 
 const satie = new classicalMusic(
-  'Éric Alfred Leslie Satie', 
+  'Éric Satie', 
   'Gymnopedies No.1', 
-  'Wolfgang Amadeus Mozart (27 January 1756 – 5 December 1791), baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period.',
-  'The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.',   
+  'Éric Alfred Leslie Satie, who signed his name Erik Satie after 1884, was a French composer and pianist. Satie was an influential artist in the late 19th- and early 20th-century Parisian avant-garde. ',
+  'The Gymnopédies or Trois Gymnopédies, published in Paris starting in 1888, are three piano compositions written by French composer and pianist Erik Satie. From the second half of the 20th century on, the Gymnopédies were often erroneously described as part of Satie\'s body of furniture music, perhaps because of John Cage\'s interpretation of them. Collectively, the Gymnopédies are regarded as an important precursor to modern ambient music.',   
   'material/image/satie.jpg',
   'material/music/satie.mp3'
   );
@@ -193,19 +193,19 @@ const satie = new classicalMusic(
 const debussy = new classicalMusic(
   'Achille-Claude Debussy', 
   'CLAIR DE LUNE', 
-  'Wolfgang Amadeus Mozart (27 January 1756 – 5 December 1791), baptised as Johannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period.',
-  'The Piano Sonata No. 16 in C major, K. 545, by Wolfgang Amadeus Mozart was described by Mozart himself in his own thematic catalogue as "for beginners", and it is sometimes known by the nickname Sonata facile or Sonata semplice. Mozart added the work to his catalogue on June 26, 1788, the same date as his Symphony No. 39. The exact circumstances of the work\'s composition are not known, however. Although the piece is well-known today, it was not published in Mozart\'s lifetime and first appeared in print in 1805. A typical performance takes about 14 minutes.',   
+  '(Achille) Claude Debussy was a French composer. He is sometimes seen as the first Impressionist composer, although he vigorously rejected the term. He was among the most influential composers of the late 19th and early 20th centuries.',
+  'The third and most famous movement of Suite bergamasque is "Clair de lune", in D♭ major. Its name comes from Verlaines poem "Clair de lune", which means "moonlight" in French. It is written in 9/8 meter, marked andante très expressif, and to be played mostly pianissimo. It is not to be confused with the two settings of the poem made by Debussy for voice and piano accompaniment.',   
   'material/image/debussy.jpg',
   'material/music/debussy.mp3'
   );
 
   var musicianList = [
-    mozart01, mozart02, beethoven, liszt01, liszt02, mendelssohn,
+    mozart01, brahms, beethoven, liszt, rachmaninoff , mendelssohn,
     chopin, bach, schumann, schubert, satie, debussy
   ];
   
   var musicianNameList = [
-    'mozart01', 'mozart02', 'beethoven', 'liszt01', 'liszt02', 'mendelssohn',
+    'mozart01', 'brahms', 'beethoven', 'liszt', 'rachmaninoff', 'mendelssohn',
     'chopin', 'bach', 'schumann', 'schubert', 'satie', 'debussy'
   ];
 
@@ -232,13 +232,13 @@ function information() {
       AstroSign = beethoven;
     } else if ((whichMonth == 9 && whichDayOfMonth >= 23) || (whichMonth == 10 && whichDayOfMonth <= 23)) {
       openinformodal();
-      AstroSign = liszt01;
+      AstroSign = liszt;
     } else if ((whichMonth == 8 && whichDayOfMonth >= 23) || (whichMonth == 9 && whichDayOfMonth <= 22)) {
       openinformodal();
-      AstroSign = liszt02;
+      AstroSign = rachmaninoff ;
     } else if ((whichMonth == 7 && whichDayOfMonth >= 23) || (whichMonth == 8 && whichDayOfMonth <= 22)) {
       openinformodal();
-      AstroSign = mozart02;
+      AstroSign = brahms;
     } else if ((whichMonth == 6 && whichDayOfMonth >= 22) || (whichMonth == 7 && whichDayOfMonth <= 22)) {
       openinformodal();
       AstroSign = chopin;
@@ -332,13 +332,13 @@ function musicianFlipCard() {
   //   console.log(AstroSign);
 
   // } else if (musicBtn.id = 'btnliszr01'){
-  //   AstroSign = liszt01;
+  //   AstroSign = liszt;
   //   openinformodal();
   // } else if (musicBtn.id = 'btnmendlson'){
   //   AstroSign = mendelssohn;
   //   openinformodal();
   // } else if (musicBtn.id = 'btnmozart01'){
-  //   AstroSign = mozart02;
+  //   AstroSign = brahms;
   //   openinformodal();
   // } else if (musicBtn.id = 'btnsatie'){
   //   AstroSign = satie;
@@ -349,11 +349,11 @@ function musicianFlipCard() {
   // } else if (musicBtn.id = 'btnschumann'){
   //   AstroSign = schumann;
   //   openinformodal();
-  // } else if (musicBtn.id = 'btnliszt02'){
-  //   AstroSign = liszt02;
+  // } else if (musicBtn.id = 'btnRachmaninoff '){
+  //   AstroSign = Rachmaninoff ;
   //   openinformodal();
-  // } else if (musicBtn.id = 'btnbmozart02'){
-  //   AstroSign = mozart02;
+  // } else if (musicBtn.id = 'btnbbrahms'){
+  //   AstroSign = brahms;
   //   openinformodal();
   // }
 
@@ -374,9 +374,9 @@ musicBtn.forEach(musicButton => {
 
 
 
-// const mozart02id = document.getElementById('mozart02');
-// mozart02id.addEventListener('click',  () => {
-//   AstroSign = mozart02;
+// const brahmsid = document.getElementById('brahms');
+// brahmsid.addEventListener('click',  () => {
+//   AstroSign = brahms;
 //   AstroSignName();
 //   openinformodal();
 // }, false); 
