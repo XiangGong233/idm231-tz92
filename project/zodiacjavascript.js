@@ -103,7 +103,7 @@ const mozart01 = new classicalMusic(
 const brahms = new classicalMusic(
   'Johannes Brahms', 
   'Piano Sonata No. 11 in A major', 
-  'Johannes Brahms was a German composer, pianist, and conductor of the Romantic period. Brahms reputation and status as a composer are such that he is sometimes grouped with Johann Sebastian Bach and Ludwig van Beethoven as one of the "Three Bs" of music.',
+  'Johannes Brahms was a German composer, pianist, and conductor of the Romantic period. Brahms is sometimes grouped with Johann Sebastian Bach and Ludwig van Beethoven as one of the "Three Bs" of music.',
   'The Hungarian Dances by Johannes Brahms (WoO 1), are a set of 21 lively dance tunes based mostly on Hungarian themes, completed in 1879. Each dance has been arranged for a wide variety of instruments and ensembles. The better-known Hungarian Dances include Nos. 1 and 5, the latter of which was based on the csárdás "Bártfai emlék" (Memories of Bártfa) by Hungarian composer Béla Kéler, which Brahms mistakenly thought was a traditional folksong. ',   
   'material/image/brahms.jpg',
   'material/music/brahms.mp3'
